@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <img src="images/thukhoa.PNG">
+        </div>
+        <div class="infomation">
+            <h1 class="title">Những gương mặt thủ khoa đại học đạt tuyệt đối 30 điểm: Khi bạn giỏi thực sự, điểm thi chỉ là một con số! </h1>
+            <p><span class="type">Học đường</span> - <span class="time">3 giờ trước</span></p>
+            <p class="content">Hầu hết thủ khoa được 30 điểm trong kì thi THPT Quốc gia đều tự chấm được 30 cho mình ngay sau khi...</p>
+        </div>
+    </div>
+    <style>
+        .container {
+			
+			width: 100%;
+			margin-top: 150px;
+		}
+		.gallery {
+			width: 40%;
+			float: left;
+			text-align: center;
+		}
+		.gallery img {
+			height: 300px;
+		}
+        .infomation{
+            width: 60%;
+            float: left;
+        }
+        .container::after {
+			clear: both;
+			display: table;
+		}
+        .title {
+			margin-top: 0px;
+            font-family:Arial, sans-serif;
+            font-size: 35px;
+		}
+        .type {
+			color: rgb(68, 72, 119);
+			font-size: 25px;
+		}
+		.time {
+			color: #6b6a6a;
+			font-size: 25px;
+			font-weight: normal;
+		}
+		.content {
+			margin: 0px;
+			font-size: 25px;
+			color: #646262;
+			padding-bottom: 25px;
+            font-family:Arial, sans-serif;
+		}
+    </style>
+</body>
+</html>
