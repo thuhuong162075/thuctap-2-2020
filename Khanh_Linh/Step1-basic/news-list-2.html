@@ -1,0 +1,42 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>news-list-2</title>
+ </head>
+ <body>
+	<div class="container">
+		<ul class="list-group">
+			<li class="list-group-item">Quán bún riêu 30 năm tuổi ở vỉa hè Sài Gòn có gì hấp dẫn mà Trường Giang trở thành "khách quen" lâu năm?</li>
+			<li class="list-group-item">Sữa tươi Mười vào sáng tinh mơ và câu chuyện 20 năm gây thương nhớ của những cô chủ quán dễ thương nhất Sài Gòn</li>
+			<li class="list-group-item">Quán cafe ở Sài Gòn mà Thủ tướng Canada ghé uống: "Ông và người ngòi cùng bàn đều uống cafe sữa pha phin và khen ngon"</li>
+		</ul>
+	</div>
+	<style type="text/css">
+		.container {
+			margin-left: 10%;
+			margin-right: 10%;
+			width: 80%;
+		}
+		.list-group {
+			font-size: 25px;
+			color: #383E54;
+			line-height: 1.5;
+			list-style: none;
+		}
+		li.list-group-item::before {
+			content: url(images/list1.png);
+			margin-right: 10px;
+		}
+		li.list-group-item::after {
+			content: url(images/list2.png);
+			margin-left: 10px;
+		}
+		.list-group-item {
+			margin-bottom: 10px;
+		}
+	</style>
+ </body>
+ </html>

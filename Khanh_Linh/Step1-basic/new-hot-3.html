@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-hot-3</title>
+</head>
+<body>
+    <div class="container">
+		<div class="gallery">
+			<img src="images/georgina.png">
+		</div>
+		<div class="infomation">
+			<div class="info_main">
+				<h1 class="title">Georgina đẹp hút mắt trên khán đài, tiếp lửa cho Cristiano Ronaldo</h1>
+				<p><span class="type">Sport</span> - <span class="time">13 giờ trước</span></p>
+				<p class="content">Người đẹp 22 tuổi bay sang Nga để cổ vũ Ronaldo trong cuộc chạm trán với Morocco, trận đấu mà siêu sao người Bồ Đào Nha tỏa sáng với bàn thắng duy nhất giúp Bồ Đào Nha giành 3 điểm trọn vẹn.</p>
+			</div>
+			<div class="read_more">
+				<p class="read_more_text">Đọc thêm</p>
+				<ul class="list-group">
+					<li class="list-group-item">"Ronaldo đang ở một đẳng cấp khác, trên tầm Messi rồi" <span class="time">. 5 giờ trước</span></li>
+					<li class="list-group-item">Cầu thủ Morocco tổ trọng tài lén lút xin áo đấu của Ronaldo <span class="time">. 4 giờ trước</span></li>
+					<li class="list-group-item">"Messi đau khổ và khóc nhiều vì giấc mơ vô địch WorldCup" <span class="time">. 5 giờ trước</span></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+	<style type="text/css">
+		.container {
+			margin-left: 15%;
+			margin-right: 15%;
+			width: 70%;
+			margin-top: 30px;
+		}
+		.gallery {
+			width: 40%;
+			float: left;
+			text-align: center;
+		}
+		.gallery img {
+			height: 440px;
+		}
+		.infomation {
+			width: 60%;
+			float: left;
+		}
+		.container::after {
+			clear: both;
+			display: table;
+		}
+		.title {
+			margin-top: 0px;
+            font-family:Arial, sans-serif;
+		}
+		.type {
+			color: #41445E;
+			font-size: 20px;
+		}
+		.time {
+			color: #777777;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		.content {
+			margin: 0px;
+			font-size: 20px;
+			color: #575757;
+			padding-bottom: 25px;
+			border-bottom: 1px dotted gray;
+		}
+		.read_more_text {
+			color: #777777; 
+		}
+		ul.list-group {
+			color: #2c325b;
+			font-size: 18px;
+			line-height: 1.5;
+			font-weight: bold;
+			list-style: none;
+			padding: 0px;
+		}
+		li.list-group-item {
+			margin-bottom: 10px;
+		}
+		li.list-group-item::before {
+			content: "\2022";
+			color: #FF5E34;
+			margin-right: 8px;
+			width: 1px;
+		}
+	</style>
+</body>
+</html>
