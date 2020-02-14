@@ -1,0 +1,59 @@
+.info_main {
+	width: 861px;
+	height: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+.title_main {
+	margin-bottom: 20px;
+}
+.title_main h2 {
+	display: inline;
+	border-left: 3px solid #FB6C27;
+	margin: 0px;
+	padding-left: 10px;
+}
+.title_main p {
+	font-size: 20px;
+	display: inline;
+	margin-right: 24px;
+}
+.title_main form {
+	display: inline;
+}
+.title_main form select {
+	margin: 8px;
+	border: 1px solid gray;
+}
+.title_main form select option{
+	text-align: center;
+}
+.content {
+	display: grid;
+	grid-template-columns: 275px 275px 275px;
+	grid-column-gap: 17px;
+}
+.content .info img {
+	width: 100%;
+}
+.info p {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0px;
+}
+.info p .noi_bat {
+	display: inline-block;
+	background: #9CA7B7;
+	border-radius: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	font-size: 15px;
+	font-weight: normal;
+}
+.info p .time {
+	font-size: 15px;
+	font-weight: normal;
+	color: #848484;
+}

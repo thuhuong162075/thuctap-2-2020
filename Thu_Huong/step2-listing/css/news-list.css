@@ -1,0 +1,40 @@
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.main_info {
+	width: 770px;
+	height: 570px;
+	padding: 15px;
+}
+.list-group {
+	list-style-type: none;
+}
+.list-group-item img {
+	float: left;
+	width: 283px;
+	height: 200px;
+}
+.list-group-item {
+	clear: both;
+	height: 200px;
+	margin-bottom: 60px;
+}
+.list-group-item .detail {
+	margin-left: 305px;
+}
+.list-group-item .detail .title {
+	margin: 0px;
+}
+.type_info {
+	color: #101148;
+	font-size: 18px;
+}
+.time {
+	color: #a09898;
+	font-size: 18px;
+}
+.info_detail {
+	color: #3a3434;
+}
