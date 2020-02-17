@@ -1,0 +1,12 @@
+@import 'demoExtend.scss';
+$bg: #154bb0;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	@extend %navbar;
+	background-color: $bg;
+}
