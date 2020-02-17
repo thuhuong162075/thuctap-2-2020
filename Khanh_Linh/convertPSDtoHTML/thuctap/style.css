@@ -1,5 +1,4 @@
 
-body{margin:0}
 @font-face{
     font-family: josefinSans-bold;
     src: url(font/josefin-sans/JosefinSans-Bold.ttf);
@@ -28,10 +27,12 @@ body{margin:0}
     font-family: ProximaNova-Bold;
     src: url(font/proxima_ssv/proxima_ssv/Proxima\ Nova\ Bold.otf);
 }
+
 .page{
     height: auto;
     width: 100%;
 }
+/*heder*/
 .header{
     height: 66px;
     width: 100%;
@@ -73,6 +74,7 @@ li.header-list-item{
 .link3{
     color: black;
 }
+/*banner*/
 .main-banner{
     background: url("imgg/bg_header.png") top center ;
     width: 100%;
@@ -105,6 +107,7 @@ li.header-list-item{
     padding-top: 20px;
     font-family:OpenSans-Semibold;
 }
+/*group1*/
 .group1{
     width: 100%;
 }
@@ -147,6 +150,7 @@ li.header-list-item{
     font-size: 13.3pt;
 }
 .name{
+    color: black;
     border-radius: .5rem;
     border: 0px solid;
     padding-left: 1%;
@@ -196,6 +200,7 @@ li.header-list-item{
     float: left;
     background-color:black;
 }
+/*group2*/
 .group2{
     margin-left: 9.5%;
     margin-right: 9.5%;
@@ -294,6 +299,7 @@ li.header-list-item{
     font-family: josefinSans-bold;
     font-style: italic ;
 }
+/*why chose us*/
 .why-chose-us{
     padding-top : 180px;
     padding-left: 16%;
@@ -319,6 +325,7 @@ li.header-list-item{
     width: 150px;
     height: 150px;
 }
+/*footer*/
 .footer{
     margin-left: 15%;
     margin-right: 9%;
