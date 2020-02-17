@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.navbar {
+  /*height: $heightNav;*/
+  background-color: #A70E1A;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .navbar navbar-brand {
+    padding: 0 10px; }
+  .navbar .navbar-nav {
+    list-style-type: none; }
+    .navbar .navbar-nav .nav-item {
+      display: inline-block;
+      /*height: 100%;*/ }
+      .navbar .navbar-nav .nav-item .nav-link {
+        padding: 10px 10px;
+        display: block;
+        color: white;
+        text-decoration: none; }
+    .navbar .navbar-nav .nav-item:hover {
+      background: #680b11; }
+
+/*# sourceMappingURL=menu1.css.map */
