@@ -71,7 +71,7 @@ header .header-right ul li {
 header .header-right ul li .nav-link {
 	font-size: 22px;
 	text-decoration: none;
-	font-family: "OpenSans-Bold";
+	font-family: "OpenSans";
 	color: #222222;
 }
 header .header-right ul li .nav-link.active {
@@ -170,7 +170,7 @@ article {
 }
 .article_bottom {
 	margin-top: 20px;
-	height: 640px;
+	height: 620px;
 	color: #0a0d1b;
 	font-size: 20px;
 	position: relative;
@@ -189,18 +189,19 @@ article {
 }
 .article_detail p {
 	font-family: 'OpenSans';
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 2;
 }
 .article_detail.lorem {
 	padding: 100px 30px 70px 30px;
-	height: 310px;
+	height: 290px;
 	margin-top: 90px;
 	position: absolute;
 	width: 20%;
 }
 .article_detail.broad {
 	padding: 80px 30px 70px 30px;
-	height: 330px;
+	height: 310px;
 	margin-top: 60px;
 	position: absolute;
 	left: 24%;
@@ -208,7 +209,7 @@ article {
 }
 .article_detail.pragmatic {
 	padding: 70px 30px;
-	height: 340px;
+	height: 320px;
 	margin-top: 30px;
 	position: absolute;
 	left: 48%;
@@ -216,7 +217,7 @@ article {
 }
 .article_detail.flexible {
 	padding: 40px 30px 70px 30px;
-	height: 370px;
+	height: 350px;
 	position: absolute;
 	left: 72%;
 	width: 20%;
@@ -262,7 +263,7 @@ footer .footer-top {
 	font-size: 20px;
 	background: white;
 	display: grid;
-	grid-template-columns: 21% 20% 22% 20%;
+	grid-template-columns: 23% 20% 22% 20%;
 	grid-column-gap: 50px;
 	padding-bottom: 35px;
 }
