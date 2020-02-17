@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  height: 40px;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .navbar .navbar-brand {
+    margin-right: 30px; }
+  .navbar .navbar-nav {
+    list-style-type: none; }
+    .navbar .navbar-nav .nav-item {
+      display: inline-block; }
+      .navbar .navbar-nav .nav-item a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: SFD-Medium;
+        padding: 0 8px; }
+
+/*# sourceMappingURL=menu.css.map */
