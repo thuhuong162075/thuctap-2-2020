@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'JosefinSans-Bold';
+  src: url('../fonts/JosefinSans-Bold/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/JosefinSans-Bold/JosefinSans-Bold.woff') format('woff'), url('../fonts/JosefinSans-Bold/JosefinSans-Bold.ttf')  format('truetype'), url('../fonts/JosefinSans-Bold/JosefinSans-Bold.svg#JosefinSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSans-BoldItalic';
+  src: url('../fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic.woff') format('woff'), url('../fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic.ttf')  format('truetype'), url('../fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic.svg#JosefinSans-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans/OpenSans.woff') format('woff'), url('../fonts/OpenSans/OpenSans.ttf')  format('truetype'), url('../fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf')  format('truetype'), url('../fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Semibold/OpenSans-Semibold.woff') format('woff'), url('../fonts/OpenSans-Semibold/OpenSans-Semibold.ttf')  format('truetype'), url('../fonts/OpenSans-Semibold/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-BoldIt';
+  src: url('../fonts/ProximaNova-BoldIt/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-BoldIt/ProximaNova-BoldIt.otf')  format('opentype'),
+	     url('../fonts/ProximaNova-BoldIt/ProximaNova-BoldIt.woff') format('woff'), url('../fonts/ProximaNova-BoldIt/ProximaNova-BoldIt.ttf')  format('truetype'), url('../fonts/ProximaNova-BoldIt/ProximaNova-BoldIt.svg#ProximaNova-BoldIt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	width: 100%;
+}
+header {
+	height: 80px;
+	background: #eaeaea;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .header-left {
+	margin-left: 8%;
+}
+header .header-left img {
+	height: 80px;
+	width: 200px;
+}
+header .header-right {
+	margin-right: 12%;
+}
+header .header-right ul {
+	list-style-type: none;
+	list-style-position: inside;
+	
+}
+header .header-right ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+header .header-right ul li .nav-link {
+	font-size: 17px;
+	text-decoration: none;
+	font-family: "OpenSans-Bold";
+	color: #222222;
+}
+header .header-right ul li .nav-link.active {
+	color: #4160a7;
+}
+.main_banner {
+	width: 100%;
+	height: 500px;
+	background: url('../img/banner_main.png') no-repeat top left; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main_banner .text-area {
+	color: #ffffff;
+	margin-bottom: 70px;
+}
+.main_banner .text-area h2 {
+	font-family: 'JosefinSans-BoldItalic';
+	text-align: center;
+	font-size: 36px;
+}
+.main_banner .text-area p {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'OpenSans-Semibold';
+}
+.button.lorem_ipsum button {
+	font-family: 'OpenSans-Semibold';
+	color: white;
+	background: #4160a7;
+	border:none;
+	padding: 12px 15px;
+	font-size: 18px;
+	border-radius: 8px;
+}
+.button.lorem_ipsum {
+	text-align: center;
+	margin-top: 50px;
+}
+.register {
+	height: 120px;
+	background: #4160a7;
+}
+.register .register_left {
+	float: left;
+	width: 40%;
+	height: 120px;
+	font-size: 24px;
+	font-family: 'JosefinSans-BoldItalic';
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.register .register_right {
+	float: left;
+	width: 60%;
+}
+.register .register_right form {
+	height: 86px;
+	margin: 17px 20px;
+}
+.register .register_right form input {
+	padding: 10px 15px;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+.form_top {
+	margin-bottom: 16px;
+}
+.form_input.name, .form_input.email {
+	width: 20%;
+}
+.form_input.phone {
+	width: 34%;
+}
+.form_input.send {
+	width: 10%;
+	background: #0a0d1b;
+}
+article {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+.article_top {
+	height: 180px;
+}
+.article_top h1 {
+	font-family: 'JosefinSans-BoldItalic';
+	padding-top: 70px;
+	font-size: 35px;
+}
+.article_bottom {
+	height: 640px;
+	color: #0a0d1b;
+	font-size: 20px;
+	position: relative;
+}
+.article_detail h3 {
+	font-family: 'ProximaNova-BoldIt';
+}
+.article_detail {
+	font-family: 'OpenSans';
+	border-radius: 8px;
+	background: #ffffff;
+	border: 1px solid black;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+}
+.article_detail.lorem {
+	padding: 100px 30px 70px 30px;
+	height: 310px;
+	margin-top: 90px;
+	position: absolute;
+	width: 20%;
+}
+.article_detail.broad {
+	padding: 80px 30px 70px 30px;
+	height: 330px;
+	margin-top: 60px;
+	position: absolute;
+	left: 24%;
+	width: 20%;
+}
+.article_detail.pragmatic {
+	padding: 70px 30px;
+	height: 340px;
+	margin-top: 30px;
+	position: absolute;
+	left: 48%;
+	width: 20%;
+}
+.article_detail.flexible {
+	padding: 40px 30px 70px 30px;
+	height: 370px;
+	position: absolute;
+	left: 72%;
+	width: 20%;
+}
+.section {
+	height: 500px;
+	background: #f5f5f5;
+	padding-left: 110px;
+	padding-right: 110px;
+    background-color: #f5f5f5;
+}
+.section .section-title h1 {
+	font-family: 'JosefinSans-BoldItalic';
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+.section .section-title h3 {
+	font-family: 'JosefinSans-BoldItalic';
+}
+.section .section-type {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 30px;
+}
+.section .section-type .info {
+	width: 21%;
+	padding: 10px;
+	margin-right: 20px;
+	text-align: center;
+}
+.section .section-type .info .label-name {
+	margin-top: 30px;
+	font-family: 'JosefinSans-Bold';
+}
+footer {
+	clear: both;
+	background: #ffffff;
+	padding: 50px 100px 0 100px;
+}
+footer .footer-top {
+	font-size: 20px;
+	background: white;
+	display: grid;
+	grid-template-columns: 21% 20% 22% 20%;
+	grid-column-gap: 50px;
+	padding-bottom: 35px;
+}
+footer .footer-top .footer-col h3 {
+	font-family: 'JosefinSans-Bold';
+}
+footer .footer-top .footer-col p {
+	font-family: 'OpenSans';
+}
+footer .footer-top img {
+	width: 100%;
+	padding: 20px 0;
+}
+footer .footer-col.explor-link ul {
+	padding-top: 20px;
+	list-style-type: none;
+	list-style-position: inside;
+}
+footer .footer-col.explor-link ul li:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  background-size: 10px;
+  background-image: url("../img/icon_arrow.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+footer .footer-col.explor-link ul li {
+	line-height: 1.5;
+}
+footer .footer-col.latest-post ul {
+	list-style-type: none;
+	list-style-position: inside;
+}
+footer .footer-col.latest-post ul li {
+	line-height: 1.5;
+	clear: both;	
+}
+footer .footer-col.latest-post ul li img {
+	width: 40px;
+	float: left;
+	margin-right: 15px;
+}
+footer .footer-col.latest-post ul li p {
+	padding-top: 14px;
+}
+footer .footer-col.contact-us div {
+	clear: both;
+}
+footer .footer-col.contact-us div img {
+	width: 15px;
+	float: left;
+	padding-right: 20px;
+}
+footer .footer-col.contact-us div p {
+	padding-top: 16px;
+	padding-left: 35px;
+}
+.footer-bottom {
+	font-family: 'JosefinSans-Bold';
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+.footer-bottom .fb-right img {
+	margin-right: 20px;
+}
