@@ -3,7 +3,6 @@
   padding: 0; }
 
 .navbar {
-  height: 40px;
   width: 100%;
   background-color: #222222;
   display: flex;
@@ -20,6 +19,7 @@
         color: white;
         font-size: 15px;
         font-family: SFD-Medium;
-        padding: 0 8px; }
+        padding: 20px 8px;
+        display: block; }
 
 /*# sourceMappingURL=menu.css.map */

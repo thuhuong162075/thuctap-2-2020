@@ -1,0 +1,33 @@
+@import 'variable.scss';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+.navbar {
+	/*height: $heightNav;*/
+	background-color: $bg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	navbar-brand {
+		padding: 0 10px;
+	}
+	.navbar-nav {
+		list-style-type: none;
+		.nav-item {
+			display: inline-block;
+			/*height: 100%;*/
+		
+			.nav-link {
+				padding: 10px 10px;
+				display: block;
+				color: $firstColor;
+				text-decoration: none;
+			}
+		}
+		.nav-item:hover {
+			background: $secondbg;
+		}
+	}
+}
