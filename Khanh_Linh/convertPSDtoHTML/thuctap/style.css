@@ -1,5 +1,33 @@
 
 body{margin:0}
+@font-face{
+    font-family: josefinSans-bold;
+    src: url(font/josefin-sans/JosefinSans-Bold.ttf);
+}
+@font-face{
+    font-family: JosefinSans-SemiBold;
+    src: url(font/josefin-sans/JosefinSans-SemiBold.ttf);
+}
+@font-face{
+    font-family: JosefinSans-Regular;
+    src: url(font/josefin-sans/JosefinSans-Regular.ttf);
+}
+@font-face{
+    font-family: openSans-regular;
+    src: url(font/open-sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: OpenSans-Semibold;
+    src: url(font/open-sans/OpenSans-Semibold.ttf);
+}
+@font-face{
+    font-family: OpenSans-bold;
+    src: url(font/open-sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: ProximaNova-Bold;
+    src: url(font/proxima_ssv/proxima_ssv/Proxima\ Nova\ Bold.otf);
+}
 .page{
     height: auto;
     width: 100%;
@@ -7,21 +35,26 @@ body{margin:0}
 .header{
     height: 66px;
     width: 100%;
-    background-color: rgb(245, 238, 238);
+    background-color: #eaeaea;
 }
 .header1{
+    display: flex;
+    align-items: center;
     padding-right: 7.6%;
     padding-left: 7.6%;
 }
 ul.header-list{
-    float: right;
+    margin-left: 480px;
+    
     list-style: none;
     display: inline;
     text-align: center;
 }
 li.header-list-item{
+    
+    margin-left: 20px;
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: openSans-regular;
 }
 .logo{
     height: 66px;
@@ -33,7 +66,7 @@ li.header-list-item{
         
 }
 .link2{
-    color: rgb(30, 30, 114);
+    color: #4160a7;
     font-weight: bold;
     
 }
@@ -59,18 +92,21 @@ li.header-list-item{
     padding-top: 100px;
     text-align: center;
     color: white;
-    font-weight: bold;
     font-size: 30pt;
+    font-family: josefinSans-bold;
+    font-style: italic;
 }
 .slogan{
     padding-right: 19%;
     padding-left: 19%;
     text-align: center;
     color: white;
-    font-size: 18pt;
+    font-size: 16pt;
+    padding-top: 20px;
+    font-family:OpenSans-Semibold;
 }
 .group1{
-    width: 100%
+    width: 100%;
 }
 .mid-ls{
     color: white;
@@ -80,30 +116,35 @@ li.header-list-item{
     padding-top: 8px ;
     padding-bottom: 8px;
     padding-right: 1%;
-    background-color: rgb(76, 30, 243);
+    background-color:#4160a7;
     left: 580px;
     top: 400px;
     position: absolute;
     z-index: 1000 ;
+    font-family: openSans-regular;
+    font-weight: bold;
+    font-size:18pt
 }
 .register{
     height: 108px;
     width:100%;
-    background-color: rgb(76, 30, 243);  
+    background-color: #4160a7;  
 }
 .register-now{
     width:40%;
     float: left;
-    text-align: center;
+    text-align: right;
     padding-top: 40px;
+    font-size: 27pt;
+    font-family: josefinSans-bold;
     font-style: italic;
-    font-weight: bold;
-    font-size: 27px;
 }
 .input{
-    
-    width: 60%;
+    padding-left: 20%;
+    width: 40%;
     float:left;
+    font-family: JosefinSans-SemiBold;
+    font-size: 13.3pt;
 }
 .name{
     border-radius: .5rem;
@@ -167,10 +208,10 @@ li.header-list-item{
 }
 .gr2-main-title{
     margin-left: 6%;
-    font-weight: bold;
     font-style: italic;
-    font-size: 27px;
+    font-size: 30pt;
     margin-top: 60px;
+    font-family: josefinSans-bold;
 }
 .gr2-block{
     display: inline;
@@ -216,19 +257,22 @@ li.header-list-item{
     height: 300px;
 }
 .gr2-block-title{
+    font-family: ProximaNova-Bold;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: bold;
-    font-size: 17pt;
+    font-size: 15.5pt;
 }
 .gr2-block-content{
     height: 70%;
-    font-size: 12.5pt;
+    font-size: 10.8pt;
     padding-top: 12px;
-    line-height: 1.5;
+    line-height: 1.7;
+    letter-spacing: 0.3;
     padding-left: 10px;
     padding-right: 20px;
     overflow: hidden;
+    font-family:openSans-regular;
+
 }
 .gr2-end-title{
     margin-left: 10px;
@@ -240,36 +284,154 @@ li.header-list-item{
 
 }
 .end-title{
-    font-size: 27px;
-    font-weight: bold;
+    font-size: 27pt;
+    font-family: josefinSans-bold;
     font-style: italic ;
 }
 .end-content{
     margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 16pt;
+    font-family: josefinSans-bold;
     font-style: italic ;
 }
 .why-chose-us{
-    padding-top : 141px;
+    padding-top : 180px;
     padding-left: 16%;
     padding-right: 16%;
     height: 400px;
-    background-color: rgb(221, 217, 217);
+    background-color: #f5f5f5;
 }
-.healthcare{
+.ul-why-chose-us{
+    list-style: none;
+}
+.li-why-chose-us{
+    float: left;
     width: 25%;
+    text-align: center;
+}
+.wcu_title{
+    padding-top: 15px;
+    font-family: josefinSans-bold;
+    font-size: 15pt;
+    color:#0a0d1b;
+}
+.wcu_image{
+    width: 150px;
+    height: 150px;
+}
+.footer{
+    margin-left: 15%;
+    margin-right: 9%;
+    height: 357px;
+}
+.footer-top{
+    padding-top: 51px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.footer-top-col1{
+    padding-right: 40px;
+    width: 230px;
     float: left;
 }
-.financial{
-    width: 25%;
+.footer-top-col2{
+    padding-right: 40px;
+    width: 140px;
     float: left;
 }
-.education{
-    width: 25%;
+.footer-top-col3{
+    padding-right: 40px;
+    width: 255px;
     float: left;
 }
-.menufacturing{
-    width: 25%;
+.footer-top-col4{
+    width: 220px;
     float: left;
+}
+.footer-top-title{
+    letter-spacing: 0.25px;
+    font-size: 17.8pt;
+    padding-bottom: 15px;
+    font-family: josefinSans-bold;;
+    color:#2f3240;
+}
+.footer-top-image1{
+    width: 220px;
+    height: 60px;
+    padding-bottom: 15px;
+}
+.footer-top-content{
+    width: 100%;
+    text-align:justify ;
+    line-height: 18px;
+    color:#2f3240;
+    font-family: openSans-regular;
+    font-size:10.66pt;
+}
+.list-col2 {
+    padding-left: 30px;
+    list-style: url("imgg/footer-list.PNG");
+}
+.list-item-col2{
+    font-family: openSans-regular;
+    font-size:10.66pt;
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color:#2f3240;
+    letter-spacing: 0.25px;
+}
+.list-item-col3{
+    font-family: openSans-regular;
+    font-size:10.66pt;
+    padding-top: 15px;
+    display: inline-block;
+    color:#2f3240;
+}
+.picture{
+    width: 50px;
+    height: auto ;
+    float: left;
+}
+.content-col3{
+    float: left;
+    width: 80%;
+    letter-spacing: 0.25px;
+    line-height: 25px;
+}
+.list-col4{
+    padding-top: 15px;
+}
+.list-item-col4{
+    font-family: openSans-regular;
+    font-size:10.66pt;
+    display: inline-block;
+    padding-bottom: 15px;
+    color:#2f3240;
+}
+.picture4{
+    width : 22px ;
+    float: left;
+}
+.content-col4{
+    width: 80%;
+    float: left;
+    padding-left: 10%;
+}
+.footer-bottom{
+    width: 100%;
+    padding-top: 50px;
+    display: inline-block
+}
+.col-title{
+    width: 84%;
+    float: left;
+    font-size: 20px;
+    color: #2f3240;
+    font-size: 12px;
+    font-family: JosefinSans-Regular;
+}
+.end-picture{
+    
+    float: left
 }
