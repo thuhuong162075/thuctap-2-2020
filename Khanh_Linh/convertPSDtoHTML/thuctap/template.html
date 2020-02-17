@@ -37,11 +37,14 @@
                 <div class="register-now">REGISTER-NOW</div>
                 <div class="input">
                     <form class="n-e">
-                        <input type="text" class="name" placeholder="name" >
-                        <input type="text" class="email" placeholder="email">
-                        <br>
-                        <input type="text" class="phone" placeholder="phone">
+                        <div>
+                        <input type="text" class="name" onfocus="if (this.value == 'name') {this.value = '';}" onblur="if (this.value == '')  {this.value = 'name';}" value="name" >
+                        <input type="text" class="email" onfocus="if (this.value == 'email') {this.value = '';}" onblur="if (this.value == '')  {this.value = 'email';}" value="email" >
+                        </div>
+                        <div>
+                        <input type="text" class="phone" onfocus="if (this.value == 'phone') {this.value = '';}" onblur="if (this.value == '')  {this.value = 'phone';}" value="phone" >
                         <input type="button" class="send" value="SEND" src="#">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -100,7 +103,7 @@
             <div class="footer-top">
                 <!--footer top col1-->
                 <div class="footer-top-col1">
-                    <div class="footer-top-title">ABOUT US</div>
+                    <div class="footer-top-title">About Us</div>
                     <img class="footer-top-image1" src="imgg/logo-photo.png">
                     <div class="footer-top-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro </div>
                 </div>
