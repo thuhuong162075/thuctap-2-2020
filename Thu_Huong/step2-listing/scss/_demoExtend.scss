@@ -4,3 +4,13 @@
 	justify-content: center;
 	width: 100%;
 }
+%navbar-nav {
+	list-style-type: none;
+}
+%nav-item {
+	display: inline-block;
+}
+%nav-link {
+	text-decoration: none;
+	display: block;
+}

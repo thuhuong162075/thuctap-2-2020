@@ -80,7 +80,8 @@ header .header-right ul li .nav-link.active {
 .main_banner {
 	width: 100%;
 	height: 500px;
-	background: url('../img/banner_main.png') no-repeat top left; 
+	background: url('../img/banner_main.png') no-repeat top left;
+	background-size: 100% 100%; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -119,7 +120,7 @@ header .header-right ul li .nav-link.active {
 }
 .register .register_left {
 	float: left;
-	width: 40%;
+	width: 50%;
 	height: 120px;
 	font-size: 24px;
 	font-family: 'JosefinSans-BoldItalic';
@@ -129,7 +130,7 @@ header .header-right ul li .nav-link.active {
 }
 .register .register_right {
 	float: left;
-	width: 60%;
+	width: 50%;
 }
 .register .register_right form {
 	height: 86px;
@@ -326,7 +327,8 @@ footer .footer-col.contact-us div p {
 	padding-left: 35px;
 }
 .footer-bottom {
-	font-family: 'JosefinSans-Bold';
+	font-family: 'JosefinSans';
+	font-style: italic;
 	height: 70px;
 	display: flex;
 	align-items: center;
