@@ -1,0 +1,27 @@
+.article_detail {
+	border-radius: 8px;
+	background: #ffffff;
+	border: 1px solid black;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+
+}
+.article_detail.lorem {
+	padding: 100px 30px 70px 30px;
+	height: 290px;
+	margin-top: 90px;
+	position: absolute;
+}
+.article_detail.broad {
+	padding: 80px 30px 70px 30px;
+	height: 310px;
+	margin-top: 60px;
+}
+.article_detail.pragmatic {
+	padding: 70px 30px;
+	height: 320px;
+	margin-top: 30px;
+}
+.article_detail.flexible {
+	padding: 40px 30px 70px 30px;
+	height: 350px;
+}
