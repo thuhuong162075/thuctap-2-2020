@@ -5,21 +5,31 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 		ul {
-			list-style-image: url('img/list_short_link.png');
-			margin-left: 30%;
-			margin-right: 30%;
-			width: 40%;
-			width: 500px;
+			list-style-type: none;
 			line-height: 1.5;
+			width: 400px;
 		}
 		li {
 			margin-bottom: 12px;
-			font-size: 25px;
+			font-size: 18px;
+			font-family: arial;
 			color: #004175;
 		}
+		ul li {
+			background-image: url('img/list_short_link.png');
+			background-size: 18px;
+			background-repeat: no-repeat;
+			background-position: 0px 8px;
+			padding-left: 23px;
+}
 	</style>
 </head>
 <body>
+	<div>
+		<p>Ảnh mẫu</p>
+		<img src="img/list-short-link.png" style="width: 300px;">
+	</div>
+	<!--- list content --->
 	<div class="container">
 		<ul class="list-group">
 			<li class="list-group-item">Mohamed Salah sớm chia tay World Cup 2018</li>
@@ -29,5 +39,6 @@
 			<li class="list-group-item">Xây siêu thành phố thông minh tỷ USD, đất Đông Anh lại có dịp "nổi sóng"?</li>
 		</ul>
 	</div>
+	<!--- end --->
 </body>
 </html>

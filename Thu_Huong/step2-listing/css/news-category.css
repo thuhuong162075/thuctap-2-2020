@@ -1,8 +1,9 @@
+body {
+	font-family: arial;
+}
 .info_main {
-	width: 861px;
 	height: 620px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 859px;
 	padding: 15px;
 }
 .title_main {
@@ -40,7 +41,8 @@
 .info p {
 	font-weight: bold;
 	font-size: 18px;
-	margin: 10px 0px;
+	line-height: 1.5;
+	margin: 20px 0px;
 }
 .info p .noi_bat {
 	display: inline-block;
