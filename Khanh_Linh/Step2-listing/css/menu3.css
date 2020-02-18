@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.picture{
+    width:1310px;
+    height: auto;
+}
+.container {
+    background-image:url(../images/background-menu3.PNG);
+    background-repeat: repeat-x;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .container-logo {
+    margin-right: 10px;
+}
+.container .container-list {
+    list-style: none;
+}
+.container .container-list .container-list-item {
+    display: inline-block;
+    padding: 4px 4px;
+}
+.container .container-list .container-list-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: SFD-Medium;
+    display: block;
+}
