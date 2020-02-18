@@ -1,0 +1,36 @@
+$color:#a70e1a ;
+$color1: white;
+$font:SFD-Medium;
+*{
+    margin: 0;
+    padding: 0;
+}
+.picture{
+    width: 1302px;
+    height: auto;
+    
+}
+.container{
+    background-color: $color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container-logo{
+        margin-right: 10px;
+    }
+    .container-list{
+        list-style: none;
+        .container-list-item{
+            display: inline-block;
+            padding: 8px 8px;
+            a {
+				text-decoration: none;
+				color: $color1;
+				font-size: 15px;
+				font-family: $font;
+                display: block;
+            }
+        }
+    }
+}
