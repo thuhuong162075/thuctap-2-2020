@@ -1,12 +1,52 @@
 @import 'demoExtend.scss';
 $bg: #154bb0;
-
+$height: 40px;
+$color: white;
+%ex-navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+%ex-navbar-nav {
+	list-style-type: none;
+}
+%ex-nav-item {
+	display: inline-block;
+}
+%ex-nav-link {
+	text-decoration: none;
+	display: block;
+}
 * {
 	padding: 0;
 	margin: 0;
 }
 
 .navbar {
-	@extend %navbar;
-	background-color: $bg;
+	@extend %ex-navbar;
+	background:url('../img/bg-menu.png') repeat;
+	.navbar-nav {
+		@extend %ex-navbar-nav;
+		.nav-item {
+			@extend %ex-nav-item;
+			.nav-link {
+				@extend %ex-nav-link;
+				color: $color;
+				padding: 10px 5px;
+				border-width: 1px;
+		    	border-right: 0;
+		    	border-style: solid;
+		    border-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(79, 124, 195)) 1 100%;			}
+			.nav-link:hover {
+				background: #557ebb;
+			}
+		}
+		.nav-item.active {
+			background: #557ebb;
+		}
+	}
+	.navbar-brand {
+		margin: 0 10px;
+	}
 }
