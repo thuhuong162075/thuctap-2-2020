@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'SFD-Bold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+@font-face {
+  font-family: 'SFD-Medium';
+  font-display: auto;
+  src: url("../font/SFD-Medium/SFD-Medium.eot");
+  src: url("../font/SFD-Medium/SFD-Medium.eot") format("embedded-opentype"), url("../font/SFD-Medium/SFD-Medium.woff2"), url("../font/SFD-Medium/SFD-Medium.woff") format("woff"), url("../font/SFD-Medium/SFD-Medium.ttf") format("truetype"), url("../font/SFD-Medium/SFD-Medium.svg#SFD-Medium") format("svg"); }
+@font-face {
+  font-family: 'SFD-SemiBold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+.picture {
+  padding-top: 30px;
+  width: 400px;
+  height: auto; }
+
+.page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 700px; }
+  .page-list {
+    list-style: none; }
+    .page-list a {
+      text-decoration: none; }
+    .page-list-item {
+      display: flex;
+      padding: 25px 0;
+      border-bottom: 1px solid #ebebeb; }
+      .page-list-item-image {
+        width: 250px;
+        height: 163.8px; }
+      .page-list-item-container {
+        padding-left: 20px; }
+        .page-list-item-container-title {
+          font-size: 20px;
+          font-family: SFD-Bold;
+          display: block;
+          padding-bottom: 10px;
+          line-height: 26px;
+          color: #333;
+          text-decoration: none;
+          margin-bottom: 10px;
+          margin-top: -5px; }
+        .page-list-item-container-type {
+          font-family: SFD-SemiBold;
+          font-size: 14px;
+          color: #41455e; }
+        .page-list-item-container-time {
+          font-family: SFD-Medium;
+          font-size: 14px;
+          color: #777; }
+        .page-list-item-container-content {
+          font-size: 13px;
+          font-family: Arial;
+          color: #4d4d4d;
+          line-height: 18px;
+          display: block;
+          margin-top: 13px; }
+
+/*# sourceMappingURL=news-list.css.map */
