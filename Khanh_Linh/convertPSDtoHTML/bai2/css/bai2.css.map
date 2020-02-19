@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,KAAK;EACD,KAAK,EAAE,IAAI;EACX,aAAO;IACH,gBAAgB,EAAE,OAAO;IACzB,MAAM,EAAC,eAAU",
+"sources": ["bai2.scss"],
+"names": [],
+"file": "bai2.css"
+}
