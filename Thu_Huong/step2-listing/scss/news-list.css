@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'SFD-Bold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+@font-face {
+  font-family: 'SFD-Medium';
+  font-display: auto;
+  src: url("../font/SFD-Medium/SFD-Medium.eot");
+  src: url("../font/SFD-Medium/SFD-Medium.eot") format("embedded-opentype"), url("../font/SFD-Medium/SFD-Medium.woff2"), url("../font/SFD-Medium/SFD-Medium.woff") format("woff"), url("../font/SFD-Medium/SFD-Medium.ttf") format("truetype"), url("../font/SFD-Medium/SFD-Medium.svg#SFD-Medium") format("svg"); }
+@font-face {
+  font-family: 'SFD-SemiBold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+* {
+  padding: 0;
+  margin: 0; }
+
+.main-info {
+  margin: 0 auto;
+  width: 700px; }
+
+.main-list-group {
+  list-style-type: none; }
+  .main-list-group .list-item {
+    clear: both;
+    height: 170px;
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb; }
+    .main-list-group .list-item .li__link img {
+      width: 250px;
+      height: 100%;
+      float: left; }
+    .main-list-group .list-item .li__info {
+      margin-left: 270px; }
+      .main-list-group .list-item .li__info .li__title {
+        font-family: 'SFD-Bold';
+        font-size: 20px;
+        line-height: 26px;
+        color: #333;
+        margin-bottom: 10px;
+        margin-top: -5px; }
+      .main-list-group .list-item .li__info .li__meta {
+        margin-bottom: 13px; }
+        .main-list-group .list-item .li__info .li__meta .li__category {
+          font-family: SFD-SemiBold;
+          color: #41455e;
+          font-size: 14px; }
+        .main-list-group .list-item .li__info .li__meta .li__time {
+          font-family: 'SFD-Medium';
+          font-size: 14px;
+          color: #777; }
+      .main-list-group .list-item .li__info .li__detail {
+        font-family: arial;
+        font-size: 13px;
+        color: #4d4d4d;
+        line-height: 18px; }
+
+/*# sourceMappingURL=news-list.css.map */
