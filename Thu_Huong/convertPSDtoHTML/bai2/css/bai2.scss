@@ -1,0 +1,46 @@
+@import 'variable.scss';
+@import 'extends.scss';
+* {
+	margin:0;
+	padding:0;
+}
+.container {
+	width: 100%;
+	header {
+		height: 643px;
+		.toolbar-wrapper {
+			clear: both;
+			color: $color-toolbar;
+			background-color: $bg-toolbar-wrapper;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			.toolbar-currency-wrapper {
+				float: left;
+				width: 50%;
+				text-align: center;
+			}
+			.toolbar-items {
+				float: right;
+				width: 50%;
+				text-align: center;
+				li {
+					display: inline-block;
+					a {
+						text-decoration: none;
+						color: $color-toolbar;
+					}
+				}
+			}
+		}
+	}
+	article {
+		height: 1200px;
+	}
+	section {
+		height: 410px;
+	}
+	footer {
+		height: 422px;
+	}
+}

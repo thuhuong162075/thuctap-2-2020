@@ -4,59 +4,80 @@
 	<title>news-category</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, intizl-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/news-category.css">
+	<link rel="stylesheet" type="text/css" href="scss/news-category.css">
 </head>
 <body>
 	<div>
 		<p>Ảnh mẫu</p>
 		<img src="img/news-category.png" style="width: 550px;">
 	</div>
+	<!--- tincungchuyenmuc --->
 	<div class="container">
-		<div class="info_main">
-			<div class="title_main">
+		<div class="tincungmuc">
+			<div class="tcm__title">
 				<h2>TIN CÙNG CHUYÊN MỤC</h2>
-				<p>Xem theo ngày</p>
-				<form class="form">
-					<select id="date" style="width: 56px; height: 27px;">
-				  	  <option value="21" selected>21</option>
-					</select>
-					<select id="month" style="width: 108px; height: 27px;">
-					  <option value="6" selected>THÁNG 6</option>
-					</select>
-					<select id="year" style="width: 76px; height: 27px">
-					  <option value="2018" selected>2018</option>
-					</select>
-					<input type="submit" name="XEM" value="XEM" style="width: 90px; height: 27px; background: #777777; color: white;">
-				</form>
-				
+				<div class="tcm__date">
+					<span>Xem theo ngày</span>
+					<ul class="form">
+						<li class="list list__date">
+							<select id="date">
+						  	  <option value="21" selected>21</option>
+							</select>
+						</li>
+						<li class="list list__month">
+							<select id="month">
+							  <option value="6" selected>THÁNG 6</option>
+							</select>
+						</li>
+						<li class="list list__year">
+							<select id="year">
+							  <option value="2018" selected>2018</option>
+							</select>
+						</li>
+						<li class="list list__watch">
+							<button>XEM</button>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="content">
-				<div class="info" id="1">
-					<img src="img/news-category1.png">
-					<p>Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống nền gạch đầu tử vong, hung thủ bị điều tra về hành vi "Cố ý gây thương tích" <span class="noi_bat">Nổi bật</span></p>
-				</div>
-				<div class="info" id="2">
-					<img src="img/news-category2.png">
-					<p>Câu chuyện: "Cô gái chờ bạn trai suốt đêm ngoài đường rồi bất ngờ bỏ đi để lại hết túi xách giấy tờ" khiến cư dân mạng trổ tài thám tử <span class="noi_bat">Nổi bật</span></p>
-				</div>
-				<div class="info" id="1">
-					<img src="img/news-category3.png">
-					<p>Vụ thi thể bị trói chân tay nổi trên sông ở Đà Nẵng: Nạn nhân làm nghề cho vay tiền <span class="time">- 47 phút trước</span></p>
-				</div>
-				<div class="info" id="1">
-					<img src="img/news-category1.png">
-					<p>Quảng Ninh: Sét đánh khiến toàn bộ điện lưới đảo Cô Tô mất điện kéo dài <span class="time">- 01 giờ trước</span></p>
-				</div>
-				<div class="info" id="1">
-					<img src="img/news-category5.png">
-					<p>khối u quái có răng, tóc, xương trong buồng trứng bé gái <span class="time">- 01 giờ trước</span></p>
-				</div>
-				<div class="info" id="1">
-					<img src="img/news-category6.png">
-					<p>Người thân hai thiếu nữ tử vong mang quan tài đến trụ sở công an huyện<span class="time">- 01 giờ trước</span></p>
-				</div>
+			<div class="tcm__content">
+				<ul class="content-list">
+					<li class="content-item" id="1">
+						<a class="content-item-link"><img src="img/news-category1.png"></a>
+						<h4>Vĩnh Long: Bé gái 4 tuổi bị bạn của bố dùng tay đánh đập xuống nền gạch đầu tử vong, hung thủ bị điều tra về hành vi "Cố ý gây thương tích" <span class="noibat">Nổi bật</span>
+						</h4>
+
+					</li>
+					<li class="content-item" id="2">
+						<a class="content-item-link"><img src="img/news-category2.png"></a>
+						<h4>Câu chuyện: "Cô gái chờ bạn trai suốt đêm ngoài đường rồi bất ngờ bỏ đi để lại hết túi xách giấy tờ" khiến cư dân mạng trổ tài thám tử <span class="noibat">Nổi bật</span></h4>
+						
+					</li>
+					<li class="content-item" id="3">
+						<a class="content-item-link"><img src="img/news-category3.png"></a>
+						<h4>Vụ thi thể bị trói chân tay nổi trên sông ở Đà Nẵng: Nạn nhân làm nghề cho vay tiền </h4>
+						<span class="time">- 47 phút trước</span>
+					</li>
+					<li class="content-item" id="4">
+						<a class="content-item-link"><img src="img/news-category1.png"></a>
+						<h4>Quảng Ninh: Sét đánh khiến toàn bộ điện lưới đảo Cô Tô mất điện kéo dài </h4>
+						<span class="time">- 01 giờ trước</span>
+					</li>
+					<li class="content-item" id="1">
+						<a class="content-item-link"><img src="img/news-category5.png"></a>
+						<h4>khối u quái có răng, tóc, xương trong buồng trứng bé gái </h4>
+						<span class="time">- 01 giờ trước</span>
+					</li>
+					<li class="content-item" id="1">
+						<a class="content-item-link"><img src="img/news-category6.png"></a>
+						<h4>Người thân hai thiếu nữ tử vong mang quan tài đến trụ sở công an huyện </h4>
+						<span class="time">- 01 giờ trước</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+	<!--- end --->
+	
 </body>
 </html>
