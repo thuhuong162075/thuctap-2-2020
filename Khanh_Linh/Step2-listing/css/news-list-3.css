@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'SFD-Bold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+@font-face {
+  font-family: 'SFD-Medium';
+  font-display: auto;
+  src: url("../font/SFD-Medium/SFD-Medium.eot");
+  src: url("../font/SFD-Medium/SFD-Medium.eot") format("embedded-opentype"), url("../font/SFD-Medium/SFD-Medium.woff2"), url("../font/SFD-Medium/SFD-Medium.woff") format("woff"), url("../font/SFD-Medium/SFD-Medium.ttf") format("truetype"), url("../font/SFD-Medium/SFD-Medium.svg#SFD-Medium") format("svg"); }
+@font-face {
+  font-family: 'SFD-SemiBold';
+  font-display: auto;
+  src: url("../font/SFD-Heavy/SFD-Bold.eot");
+  src: url("../font/SFD-Heavy/SFD-Bold.eot") format("embedded-opentype"), url("../font/SFD-Heavy/SFD-Bold.woff2"), url("../font/SFD-Heavy/SFD-Bold.woff") format("woff"), url("../font/SFD-Heavy/SFD-Bold.ttf") format("truetype"), url("../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold") format("svg"); }
+.picture {
+  width: 292px;
+  height: auto; }
+
+.page {
+  padding: 0px 20px;
+  width: 320px;
+  height: 480px; }
+  .page .type-title a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: SFD-Bold;
+    color: black;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 30px; }
+    .page .type-title a:before {
+      display: block;
+      width: 4px;
+      height: 20px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background: #ff6115;
+      content: ''; }
+  .page .best-new {
+    padding-bottom: 40px; }
+    .page .best-new-image {
+      width: 320px;
+      height: 180px;
+      overflow: hidden;
+      display: block;
+      /* nhung thanh phan bi thua se an giau di*/ }
+      .page .best-new-image img {
+        width: 100%;
+        height: auto; }
+    .page .best-new-title a {
+      font-family: SFD-Bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2d2d2d;
+      text-decoration: none; }
+  .page .other-new {
+    padding-right: 0px; }
+    .page .other-new-list {
+      list-style: none;
+      border-top: 1px solid #e9e9e9; }
+      .page .other-new-list-item {
+        padding-top: 15px;
+        display: inline;
+        display: flex; }
+        .page .other-new-list-item-image {
+          width: 60px;
+          height: 60px;
+          float: left;
+          margin-right: 15px; }
+          .page .other-new-list-item-image img {
+            width: 60px;
+            height: 60px; }
+        .page .other-new-list-item-title a {
+          text-decoration: none;
+          font-family: SFD-Bold;
+          font-size: 15px;
+          line-height: 18px;
+          color: #2d2d2d; }
+
+/*# sourceMappingURL=news-list-3.css.map */
