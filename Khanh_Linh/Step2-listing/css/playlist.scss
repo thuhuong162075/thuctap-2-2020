@@ -143,10 +143,15 @@
             &-list{
                 list-style: none;
                 &-item{
+                    opacity:0.6;
                     padding-top: 15px;
                     padding-bottom: 15px;
                     display: flex;
                     border-bottom: 1px solid #ebebeb;
+                    &:hover{
+                        opacity:1;
+                        background-color:#f1f1f1;
+                    }
                     &-image{
                         border: 0px;
                         border-radius: 4px;
