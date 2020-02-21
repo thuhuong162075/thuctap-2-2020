@@ -34,18 +34,10 @@
   float: right; }
   .mutex-right .m__title {
     padding: 12px 15px 15px 15px;
-    background-color: rgba(0, 2, 34, 0.1);
-    position: relative; }
-    .mutex-right .m__title:before {
-      content: '';
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      top: 15px;
-      background: url(../img/playlisticon.png); }
-    .mutex-right .m__title h2 {
-      padding-left: 30px;
-      font-size: 24px; }
+    background-color: rgba(0, 2, 34, 0.1); }
+    .mutex-right .m__title img {
+      width: 86px;
+      height: 20px; }
   .mutex-right .m__content {
     overflow-y: scroll;
     /* Handle */

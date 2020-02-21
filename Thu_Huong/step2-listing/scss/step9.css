@@ -59,6 +59,8 @@
         left: 50%;
         margin-top: -3px;
         margin-left: -6px; }
+      .tmn__title .controls .button.disabled {
+        opacity: 0.4; }
 
 .tmn__content {
   height: 436px;
