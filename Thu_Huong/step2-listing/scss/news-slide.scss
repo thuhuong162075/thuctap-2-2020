@@ -85,6 +85,17 @@
 					    left: -30px;
 					    content: '';
 					}
+					&.info3:before {
+						display: block;
+						width: 29px;
+						height: 26px;
+						background-repeat: no-repeat;
+						background: url(../img/news-slide-fb.png);
+						position: absolute;
+						top: -4px;
+					    left: -30px;
+					    content: '';
+					}
 				}
 				
 			}
