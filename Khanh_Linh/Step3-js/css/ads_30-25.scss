@@ -1,0 +1,128 @@
+$font-k14bold : SFD-Bold;
+$font-k14: SFD-Medium;
+.picture{
+    width: 300px;
+    height: auto;
+}
+.page-ad1{
+    border: 1px solid #ebebeb;
+    border-radius: 4px; ;
+    width: 300px;
+    height: auto;
+    margin-bottom: 100px;
+    position: relative;
+    &-header{
+        height: 35px;
+        width: 100%;
+        background-color: #8b0304 ;
+        &-title{
+            color: #f8f8ff;
+            font-size: 13px;
+            font-family: $font-k14bold;
+            padding-left: 10px;
+            line-height: 35px;
+            text-transform: uppercase;
+        }
+    }
+    &-hot{
+        padding: 10px;
+        border-bottom: 1px solid #ebebeb;
+        display: flex;
+        &-image{
+            text-decoration: none;
+            padding-right: 10px;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+        &-content{
+            h1{
+                font-size: 13px;
+                font-family: $font-k14bold;
+                line-height: 16px;
+                padding-bottom: 6px;
+                color:#554e4e;
+            }
+            p{
+                padding-right: 20px;
+                font-size: 12px;
+                font-family: $font-k14;
+                line-height: 16px;
+                color: #7d7d7d;
+            }
+        }
+    }
+    &-content{
+        padding-left: 10px;
+        padding-right: 30px;
+        ul{
+            list-style: none;
+            li{
+                &:before{
+                    background-color: #8b0304 ;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    content: '';
+                    border-radius: 100%;
+                    float: left;
+                    margin-top: 5px;
+                    margin-right: 8px;
+                }
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ebebeb;
+                a{  font-size: 13px;
+                    line-height: 16px;
+                    color:#554e4e;
+                    text-decoration: none;
+                    font-family: $font-k14bold;
+                    display: -webkit-box;
+                }
+            }
+        }
+    }
+    &-footer{
+        padding: 10px;
+        a{
+            font-size: 13px;
+            font-family: $font-k14bold;
+            color: #8b0304;
+        }
+        span{
+            font-size: 12px;
+            font-family: $font-k14;
+            color: #7d7d7d;
+        }
+    }
+    .ad-logo{
+        
+        text-decoration: none;
+        &:hover{
+            background: url("../images//adxlogo-2-hover.png")no-repeat top left;
+            width: 120px;
+            .txt-logo{
+                box-sizing: content-box;
+                display: block;
+                font: 13px tahoma,arial;
+                color: #9b9b9b;
+                font-weight: 600;
+                padding-left: 16px;
+                text-decoration: none;
+                line-height: 17px;
+                text-decoration: none;
+            }
+        }
+        width: 35px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("../images/adxlogo-2.png") no-repeat top left ;
+        .txt-logo{
+            display: none;
+            
+        }
+    }
+}

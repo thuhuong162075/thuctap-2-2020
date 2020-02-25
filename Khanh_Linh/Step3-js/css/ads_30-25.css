@@ -1,0 +1,105 @@
+.picture {
+  width: 300px;
+  height: auto; }
+
+.page-ad1 {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  width: 300px;
+  height: auto;
+  margin-bottom: 100px;
+  position: relative; }
+  .page-ad1-header {
+    height: 35px;
+    width: 100%;
+    background-color: #8b0304; }
+    .page-ad1-header-title {
+      color: #f8f8ff;
+      font-size: 13px;
+      font-family: SFD-Bold;
+      padding-left: 10px;
+      line-height: 35px;
+      text-transform: uppercase; }
+  .page-ad1-hot {
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+    display: flex; }
+    .page-ad1-hot-image {
+      text-decoration: none;
+      padding-right: 10px; }
+      .page-ad1-hot-image img {
+        width: 90px;
+        height: 90px; }
+    .page-ad1-hot-content h1 {
+      font-size: 13px;
+      font-family: SFD-Bold;
+      line-height: 16px;
+      padding-bottom: 6px;
+      color: #554e4e; }
+    .page-ad1-hot-content p {
+      padding-right: 20px;
+      font-size: 12px;
+      font-family: SFD-Medium;
+      line-height: 16px;
+      color: #7d7d7d; }
+  .page-ad1-content {
+    padding-left: 10px;
+    padding-right: 30px; }
+    .page-ad1-content ul {
+      list-style: none; }
+      .page-ad1-content ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebebeb; }
+        .page-ad1-content ul li:before {
+          background-color: #8b0304;
+          display: block;
+          width: 8px;
+          height: 8px;
+          content: '';
+          border-radius: 100%;
+          float: left;
+          margin-top: 5px;
+          margin-right: 8px; }
+        .page-ad1-content ul li a {
+          font-size: 13px;
+          line-height: 16px;
+          color: #554e4e;
+          text-decoration: none;
+          font-family: SFD-Bold;
+          display: -webkit-box; }
+  .page-ad1-footer {
+    padding: 10px; }
+    .page-ad1-footer a {
+      font-size: 13px;
+      font-family: SFD-Bold;
+      color: #8b0304; }
+    .page-ad1-footer span {
+      font-size: 12px;
+      font-family: SFD-Medium;
+      color: #7d7d7d; }
+  .page-ad1 .ad-logo {
+    text-decoration: none;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/adxlogo-2.png") no-repeat top left; }
+    .page-ad1 .ad-logo:hover {
+      background: url("../images//adxlogo-2-hover.png") no-repeat top left;
+      width: 120px; }
+      .page-ad1 .ad-logo:hover .txt-logo {
+        box-sizing: content-box;
+        display: block;
+        font: 13px tahoma,arial;
+        color: #9b9b9b;
+        font-weight: 600;
+        padding-left: 16px;
+        text-decoration: none;
+        line-height: 17px;
+        text-decoration: none; }
+    .page-ad1 .ad-logo .txt-logo {
+      display: none; }
+
+/*# sourceMappingURL=ads_30-25.css.map */
