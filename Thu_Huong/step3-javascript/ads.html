@@ -4,8 +4,57 @@
 	<title>ads_300*250</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="scss/ads.css">
+
 </head>
 <body>
-
+	<div>
+		<p>Ảnh gốc </p>
+		<img src="img/ads_300x250.png" style="width: 350px;">
+		<p>Kết qủa</p>
+	</div>
+	<div class="container">
+		<div class="adx">
+			<div class="adx__title">
+				<h3>TƯ VẤN SINH LÝ NGƯỜI BỆNH GÚT</h3>
+				<div id="adxlogo">
+					<a href="#" id="adxlogo-link">
+						<span id="txtlogo">Admicro AdX</span>
+					</a>
+				</div>
+			</div>
+			<div class="adx__content">
+				<div class="main-content">
+					<img src="img/ads.png">
+					<div class="detail">
+						<h4>Cách giúp chấm dứt bệnh gút chỉ sau 3 tháng của một kế</h4>
+						<p>Chỉ sau 3 tháng, sức khỏe của chú Hỷ đã trở lại bình thường, cơn đau gút hầu như không ...</p>
+					</div>
+				</div>
+				<div class="list-content">
+					<ul class="list-group">
+						<li class="info">Bước tiến quan trọng tăng cường sinh lý cho người bệnh gút</li>
+						<li class="info">"Viagra tự nhiên" giúp người bệnh gút là "mãnh hổ" phòng the</li>
+					</ul>
+				</div>
+				<p class="footer">hoangtiendan.com.vn <span>tài trợ thông tin</span></p>
+			</div>
+		</div>
+	</div>
+	<script>
+		var elem = document.getElementById("adxlogo-link");
+		var txt = document.getElementById("txtlogo");
+		elem.addEventListener("mouseover", myFunction);
+		function myFunction() {
+			elem.style.width = '138px';
+			elem.style.backgroundImage = "url('img/adxlogo-2-hover.png')";
+			txt.style.display = 'block';
+		}
+		elem.addEventListener("mouseout", myFunction1);
+		function myFunction1() {
+			elem.style.width = '37px';
+			elem.style.backgroundImage = "url('img/adxlogo-2.png')"
+			txt.style.display = 'none';
+		}
+	</script>
 </body>
 </html>

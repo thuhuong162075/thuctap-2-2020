@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding:0;
+}
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+.container {
+	width: 350px;
+	margin: 30px auto;
+	background: #ccc;
+	padding: 3px;
+}
+.adx {
+	&__title {
+		background: #8b0304;
+		border-top-left-radius: 5px;
+		position: relative;
+		h3 {
+			font-size: 13px;
+			color: #f6f3fa;
+			font-family: arial;
+			padding: 11px;
+			line-height: 18px;
+		}
+		#adxlogo {
+			a {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+				width: 37px;
+    			height: 17px;
+				text-decoration: none;
+				background: url('../img/adxlogo-2.png') no-repeat top right;
+				#txtlogo {
+					display: none;
+	    			font-size: 13px;
+	    			color: #a9a9a9;
+	    			position: absolute;
+	    			right: 25px;
+				}
+			}
+		}
+	}
+	&__content {
+		background: #fff;
+		.main-content {
+			img {
+				float: left;
+				@include calc(width, '35% - 20px');
+				padding: 10px;
+			}
+			.detail {
+				padding: 10px;
+				h4 {
+					color: #5c5656;
+					margin-bottom: 10px;
+					font-size: 15px;
+    				font-family: arial;
+				}
+				p {
+					color: #a7a7a7;
+					font-size: 13px;
+				    font-family: arial;
+				    line-height: 17px;
+				}
+			}
+			&::after {
+				content: "";
+  				clear: both;
+  				display: table;
+			}
+		}
+		.list-content {
+			.list-group {
+				list-style-type: none;
+				li {
+					font-weight: bold;
+					line-height: 18px;
+					padding: 10px 10px;
+					font-size: 15px;
+    				font-family: arial;
+					border-top: 2px solid #f8f8f8;
+					position: relative;
+					padding-left: 25px;
+					color: #605959;
+					&:before {
+						content: '';
+						position: absolute;
+						width: 8px;
+    					height: 8px;
+    					left: 10px;
+    					top: 15px;
+    					border-radius: 8px;
+						background: #8b0304;
+					}				
+				}
+			}
+		}
+		.footer {
+			font-weight: bold;
+			line-height: 18px;
+			padding: 10px 10px;
+			font-size: 15px;
+			font-family: arial;
+			border-top: 2px solid #f8f8f8;
+			padding-left: 10px;
+			color: #951a1c;
+			span {
+				color: #b1b1b1;
+				font-size: 13px;
+			}
+		}
+}
+}

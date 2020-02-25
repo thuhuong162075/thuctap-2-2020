@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 350px;
+  margin: 30px auto;
+  background: #ccc;
+  padding: 3px; }
+
+.adx__title {
+  background: #8b0304;
+  border-top-left-radius: 5px;
+  position: relative; }
+  .adx__title h3 {
+    font-size: 13px;
+    color: #f6f3fa;
+    font-family: arial;
+    padding: 11px;
+    line-height: 18px; }
+  .adx__title #adxlogo a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 37px;
+    height: 17px;
+    text-decoration: none;
+    background: url("../img/adxlogo-2.png") no-repeat top right; }
+    .adx__title #adxlogo a #txtlogo {
+      display: none;
+      font-size: 13px;
+      color: #a9a9a9;
+      position: absolute;
+      right: 25px; }
+.adx__content {
+  background: #fff; }
+  .adx__content .main-content img {
+    float: left;
+    width: -moz-calc(35% - 20px);
+    width: -webkit-calc(35% - 20px);
+    width: calc(35% - 20px);
+    padding: 10px; }
+  .adx__content .main-content .detail {
+    padding: 10px; }
+    .adx__content .main-content .detail h4 {
+      color: #5c5656;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-family: arial; }
+    .adx__content .main-content .detail p {
+      color: #a7a7a7;
+      font-size: 13px;
+      font-family: arial;
+      line-height: 17px; }
+  .adx__content .main-content::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .adx__content .list-content .list-group {
+    list-style-type: none; }
+    .adx__content .list-content .list-group li {
+      font-weight: bold;
+      line-height: 18px;
+      padding: 10px 10px;
+      font-size: 15px;
+      font-family: arial;
+      border-top: 2px solid #f8f8f8;
+      position: relative;
+      padding-left: 25px;
+      color: #605959; }
+      .adx__content .list-content .list-group li:before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        left: 10px;
+        top: 15px;
+        border-radius: 8px;
+        background: #8b0304; }
+  .adx__content .footer {
+    font-weight: bold;
+    line-height: 18px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-family: arial;
+    border-top: 2px solid #f8f8f8;
+    padding-left: 10px;
+    color: #951a1c; }
+    .adx__content .footer span {
+      color: #b1b1b1;
+      font-size: 13px; }
