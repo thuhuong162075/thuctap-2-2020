@@ -1,0 +1,85 @@
+.picture {
+  padding-left: 50px;
+  width: 170px;
+  height: auto; }
+
+.page-ad2 {
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  width: 160px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px; }
+  .page-ad2-header {
+    height: 45px;
+    background-color: #17ad42;
+    color: #fff;
+    font-size: 15px;
+    font-family: SFD-Bold;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-top: 10px; }
+  .page-ad2-content {
+    padding: 10px; }
+    .page-ad2-content-image {
+      width: 140px;
+      height: 140px; }
+      .page-ad2-content-image img {
+        width: 140px;
+        height: 140px; }
+    .page-ad2-content-hot {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .page-ad2-content-hot a {
+        padding-bottom: 10px;
+        text-decoration: none; }
+      .page-ad2-content-hot-title {
+        font-size: 14px;
+        font-family: SFD-Bold;
+        color: black;
+        line-height: 18px;
+        padding-bottom: 10px; }
+      .page-ad2-content-hot-content {
+        font-size: 13px;
+        font-family: SFD-Medium;
+        color: #555;
+        line-height: 16px; }
+    .page-ad2-content-ad-list-item {
+      border-top: 1px solid #ebebeb;
+      padding: 10px 0; }
+      .page-ad2-content-ad-list-item a {
+        text-decoration: none;
+        color: black;
+        font-family: SFD-Bold;
+        font-size: 13.5px; }
+    .page-ad2-content-ad-list .and {
+      color: #17ad42 !important;
+      font-size: 13px !important;
+      line-height: 13px !important;
+      padding: 5px 0 !important; }
+
+.ad-logo {
+  text-decoration: none;
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../images/adxlogo-2.png") no-repeat top left; }
+  .ad-logo:hover {
+    background: url("../images//adxlogo-2-hover.png") no-repeat top left;
+    width: 120px; }
+    .ad-logo:hover .txt-logo {
+      box-sizing: content-box;
+      display: block;
+      font: 13px tahoma,arial;
+      color: #9b9b9b;
+      font-weight: 600;
+      padding-left: 16px;
+      text-decoration: none;
+      line-height: 17px;
+      text-decoration: none; }
+  .ad-logo .txt-logo {
+    display: none; }
+
+/*# sourceMappingURL=ads_16-60.css.map */
