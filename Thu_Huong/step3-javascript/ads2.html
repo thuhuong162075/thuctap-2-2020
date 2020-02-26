@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ads-160*600</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="scss/ads2.css">
+</head>
+<body>
+	<div>
+		<p>Ảnh gốc</p>
+		<img src="img/ads-160x600.png" style="width: 300px">
+		<p>Kết quả </p>
+	</div>
+	<div class="container">
+		<div class="ads-160">
+			<div class="adx__title">
+				<h3>KHÁM SỨC KHỎE CHUYÊN SÂU</h3>
+				<div class="adxlogo">
+					<a id="adxlogo-link">
+						<span id="txtlogo">Admicro AdX</span>
+					</a>
+				</div>
+			</div>
+			<div class="adx__content">
+				<div class="main-content">
+					<img src="img/ads2.1.png">
+					<h4>6 lầm tưởng tai hại về vấn đề sức khỏe</h4>
+					<p>"Loại bỏ ngay 6 lầm tưởng mà bạn luôn nghĩ là đơn giản ngay ..."</p>
+				</div>
+				<div class="bonus-content">
+					<ul class="list-group">
+						<li>Những điều bác sĩ không nói với bạn!</li>
+						<li>Giảm 30% khám sức khỏe cá nhân tại Hồng Ngọc</li>
+						<li>Đang khỏe mạnh có cần đi khám sức khỏe không?</li>
+					</ul>
+					<p class="name">BV Hồng Ngọc</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var elem = document.getElementById("adxlogo-link");
+		//console.log(elem);
+		var txt = document.getElementById("txtlogo");
+		elem.addEventListener("mouseover", myFunction);
+		function myFunction() {
+			elem.style.width = '138px';
+			elem.style.backgroundImage = "url('img/adxlogo-2-hover.png')";
+			txt.style.display = 'block';
+		}
+		elem.addEventListener("mouseout", myFunction1);
+		function myFunction1() {
+			elem.style.width = '37px';
+			elem.style.backgroundImage = "url('img/adxlogo-2.png')"
+			txt.style.display = 'none';
+		}
+	</script>
+</body>
+</html>
