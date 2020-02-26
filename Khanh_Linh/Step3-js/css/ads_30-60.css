@@ -1,0 +1,73 @@
+.picture {
+  width: 310px;
+  height: auto; }
+
+.page-ad3 {
+  position: relative;
+  margin: 20px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  width: 300px;
+  height: auto; }
+  .page-ad3-header {
+    padding-left: 10px;
+    color: #fff;
+    background-color: #89060d;
+    height: 40px; }
+    .page-ad3-header h1 {
+      padding-top: 5px;
+      font-size: 14px;
+      font-family: SFD-Bold;
+      line-height: 30px; }
+  .page-ad3-content-list-item {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    float: left;
+    padding: 10px;
+    align-items: center; }
+    .page-ad3-content-list-item a img {
+      padding-right: 10px;
+      width: 65px;
+      height: 65px; }
+    .page-ad3-content-list-item-title {
+      font-size: 13px;
+      font-family: SFD-Bold;
+      color: #554e4e; }
+  .page-ad3-footer {
+    padding: 10px;
+    display: flex; }
+    .page-ad3-footer a {
+      text-decoration: none; }
+      .page-ad3-footer a h1 {
+        font-size: 13px;
+        font-family: SFD-Bold;
+        color: #89060d; }
+    .page-ad3-footer span {
+      color: #969696;
+      font-size: 14px;
+      padding-left: 2px; }
+  .page-ad3 .ad-logo {
+    text-decoration: none;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/adxlogo-2.png") no-repeat top left; }
+    .page-ad3 .ad-logo:hover {
+      background: url("../images/adxlogo-2-hover.png") no-repeat top left;
+      width: 120px; }
+      .page-ad3 .ad-logo:hover .txt-logo {
+        box-sizing: content-box;
+        display: block;
+        font: 13px tahoma,arial;
+        color: #9b9b9b;
+        font-weight: 600;
+        padding-left: 16px;
+        text-decoration: none;
+        line-height: 17px;
+        text-decoration: none; }
+    .page-ad3 .ad-logo .txt-logo {
+      display: none; }
+
+/*# sourceMappingURL=ads_30-60.css.map */
