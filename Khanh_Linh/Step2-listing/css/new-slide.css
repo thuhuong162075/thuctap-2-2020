@@ -39,7 +39,8 @@
       display: block;
       background: url(../images/sprite-k14.20.png) -213px 0 no-repeat; }
   .page .content {
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     .page .content-list {
       margin-bottom: 15px;
       float: left;
@@ -125,13 +126,6 @@
     .page .content-footer {
       margin-top: 15px;
       text-align: center; }
-      .page .content-footer-icon-action {
-        background: #fb512a;
-        width: 8px;
-        height: 8px;
-        display: inline-block;
-        border-radius: 100%;
-        margin: 0 8px; }
       .page .content-footer-icon {
         width: 8px;
         height: 8px;
@@ -140,5 +134,46 @@
         background: #000;
         opacity: .2;
         margin: 0 8px; }
+    .page .content .button-next {
+      background: url(../images/sprite-k14.20.png) -115px -137px no-repeat;
+      background-color: rgba(251, 108, 39, 0.9);
+      border-top-left-radius: 3px;
+      -webkit-border-top-left-radius: 3px;
+      -moz-border-radius-topleft: 3px;
+      border-bottom-left-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      position: absolute;
+      top: 22px;
+      width: 35px;
+      height: 95px;
+      z-index: 10;
+      cursor: pointer;
+      right: 0; }
+      .page .content .button-next:hover {
+        background-color: #fb6c27; }
+    .page .content .button-prev {
+      background: url(../images/sprite-k14.20.png) -70px -137px no-repeat;
+      background-color: rgba(251, 108, 39, 0.9);
+      border-top-right-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-radius-topright: 3px;
+      border-bottom-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 3px;
+      position: absolute;
+      top: 22px;
+      width: 35px;
+      height: 95px;
+      z-index: 10;
+      cursor: pointer; }
+      .page .content .button-prev:hover {
+        background-color: #fb6c27; }
+
+.mystyle {
+  background-color: #333 !important;
+  opacity: 0.8; }
+
+.mystyle1 {
+  background-color: #fb512a !important;
+  opacity: 1 !important; }
 
 /*# sourceMappingURL=new-slide.css.map */
