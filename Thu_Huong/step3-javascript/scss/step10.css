@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.photostory-wrapper {
+  width: 700px;
+  margin: 30px auto;
+  background: #222;
+  position: relative; }
+.photostory__title {
+  padding: 20px;
+  position: relative; }
+  .photostory__title h1 {
+    font-family: tamaho;
+    color: #fbfbfb;
+    padding-left: 54px; }
+  .photostory__title:before {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    width: 48px;
+    height: 46px;
+    content: '';
+    background: url(../img/step10-logo.png); }
+.photostory__content {
+  overflow: hidden;
+  position: relative;
+  height: 364px; }
+  .photostory__content .list-group {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.05s; }
+    .photostory__content .list-group .list-item {
+      margin-left: 20px;
+      margin-bottom: 20px; }
+      .photostory__content .list-group .list-item img {
+        width: 260px;
+        height: 340px;
+        border-radius: 10px; }
+  .photostory__content .button {
+    position: absolute;
+    width: 35px;
+    height: 95px;
+    z-index: 2;
+    top: 110px; }
+    .photostory__content .button-prev {
+      background: url(../img/sprite-k14.20.png) -70px -137px no-repeat;
+      left: 0px;
+      background-color: rgba(224, 43, 43, 0.9); }
+    .photostory__content .button-next {
+      background: url(../img/sprite-k14.20.png) -115px -137px no-repeat;
+      right: 0px;
+      background-color: rgba(224, 43, 43, 0.9); }
+.photostory .pagination {
+  position: absolute;
+  top: 30px;
+  right: 20px; }
+  .photostory .pagination .pg-bullet {
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 100%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #c4c4c4; }
+
+/*# sourceMappingURL=step10.css.map */

@@ -1,0 +1,86 @@
+$bg-button: rgba(224, 43, 43, 0.9);
+$url-button: url(../img/sprite-k14.20.png);
+* {
+	margin: 0;
+	padding: 0;
+}
+.photostory {
+	&-wrapper {
+		width: 700px;
+		margin: 30px auto;
+		background: #222;
+		position: relative;
+	}
+	&__title {
+		padding: 20px;
+		position: relative;
+		h1 {
+			font-family: tamaho;
+			color: #fbfbfb;
+			padding-left: 54px;
+		}
+		&:before {
+			position: absolute;
+		    left: 20px;
+		    top: 16px;
+		    width: 48px;
+		    height: 46px;
+			content: '';
+			background: url(../img/step10-logo.png);
+		}		
+	}
+	&__content {
+		overflow: hidden;
+		position: relative;
+		height: 364px;
+		.list-group {
+			list-style-type: none;
+			display: flex;
+			position: absolute;
+			left: 0px;
+			transition-duration: 1s;
+  			transition-timing-function: ease-out;
+  			transition-delay: 0.05s;
+			.list-item {
+				margin-left: 20px;
+				margin-bottom: 20px;
+				img {
+					width: 260px;
+					height: 340px;
+					border-radius: 10px;
+				}
+			}
+		}
+		.button {
+			position: absolute;
+			width: 35px;
+			height: 95px;
+			z-index: 2;
+			top: 110px;
+			&-prev {
+				background: $url-button -70px -137px no-repeat;
+				left: 0px;
+				background-color: $bg-button;
+			}
+			&-next {
+				background: $url-button -115px -137px no-repeat;
+				right: 0px;
+				background-color: $bg-button;
+			}
+		}
+	}
+	.pagination {
+		    position: absolute;
+    		top: 30px;
+   			right: 20px;
+			.pg-bullet {
+				cursor: pointer;
+				margin: 0 8px;
+				border-radius: 100%;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				background: #c4c4c4;
+			}
+		}
+}
