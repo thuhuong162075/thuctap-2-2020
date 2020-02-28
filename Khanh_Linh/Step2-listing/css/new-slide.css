@@ -125,7 +125,8 @@
             display: block; }
     .page .content-footer {
       margin-top: 15px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .page .content-footer-icon {
         width: 8px;
         height: 8px;
@@ -168,12 +169,8 @@
       .page .content .button-prev:hover {
         background-color: #fb6c27; }
 
-.mystyle {
-  background-color: #333 !important;
-  opacity: 0.8; }
-
 .mystyle1 {
-  background-color: #fb512a !important;
-  opacity: 1 !important; }
+  background-color: black !important;
+  opacity: 0.6; }
 
 /*# sourceMappingURL=new-slide.css.map */
