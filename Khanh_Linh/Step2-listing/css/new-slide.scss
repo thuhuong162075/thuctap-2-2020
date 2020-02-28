@@ -146,15 +146,7 @@
             text-align: center;
             
             cursor: pointer;
-            &-icon{
-                width: 8px;
-                height: 8px;
-                display: inline-block;
-                border-radius: 100%;
-                background: #000;
-                opacity: .2;
-                margin: 0 8px;
-            }
+           
         }
         .button-next{
             &:hover{
@@ -198,6 +190,19 @@
     .mystyle1{
     background-color:black!important;
       opacity : 0.6;
+    }
+    .icon{
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 100%;
+       background: #000;
+        opacity: .2;
+        margin: 0 8px;
+    }
+    .icon1{
+        background :rgba(251,108,39,1)!important;
+        opacity: 1!important ;
     }
     
     

@@ -1,8 +1,7 @@
-
-function gallery(idele,option){
+var gallery=function(idele,option){
   var ava=0;
   var pos=0;
-  var wd=option ||280;
+  var wd=option.wd ||280;
   var id=document.getElementById(idele);
   var idlist=id.querySelector('.content-list');
   var next=id.querySelector('.button-next'); // get the first element by the class button-next in id
@@ -49,7 +48,7 @@ function gallery(idele,option){
   
 };
 
-gallery('gallery');
+var gallery1= new gallery('gallery',{wd:500});
 
 
 /*
