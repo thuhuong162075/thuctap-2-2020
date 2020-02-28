@@ -10,6 +10,8 @@ var gallery= function(idele,option) //idele là id, option chứa những giá t
     var idlist=id.querySelector(".content-list");//trỏ đến ul 
     var next=id.querySelector(".button-next");//trỏ đến nút next
     var prev=id.querySelector(".button-prev");//trỏ đến nút prev
+ //thiết lập màu ban đầu   
+    prev.classList.add("button1");
 //tính số nút và hiển thị 
 var nspan= Math.ceil(nli/a); 
 for(let i=0;i<nspan; i++){ 
@@ -21,25 +23,19 @@ for(let i=0;i<nspan; i++){
 };
 //màu nút đầu tiên
 var footer_button = id.querySelectorAll(".icon");
-footer_button[0].style.background= "rgba(251,108,39,1)";
-footer_button[0].style.opacity="1";
+footer_button[0].classList.add("icon1");
 //Dịch chuyển khi click nút
 console.log(footer_button);
 id.querySelector(".content-footer").addEventListener("click",function(e){
       let old=bt;
       let index=parseInt(e.target.getAttribute("data-index"));
-      console.log(index,index!=NaN);
       if(typeof(index)=='number' && index>=0){
-        console.log(old,index,'ab',e.target.getAttribute("data-index"));
-      
-      console.log(e)
-      //return false;
         bt=index;
-        if (bt<2){
+        if (bt<(footer_button.length-1)){
             sta=a*wili*bt
         } else{ sta=(nli*wili -wi) }
         idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)';
-       // Color();
+       //Hàm thay đổi màu
        Color(old,index);
       }
       
@@ -71,12 +67,15 @@ for (let [index, button] of footer_button){
         });  
 };*/
 function Color(old,current){
-    /*console.log(old,current,footer_button);
-       footer_button[old].style.background= "#000";
-       footer_button[old].style.opacity="0.2";
-       footer_button[current].style.background= "rgba(251,108,39,1)";
-       footer_button[current].style.opacity="1";
-    */
+       footer_button[current].classList.add("icon1");
+       footer_button[old].classList.remove("icon1");
+       if(old==0) {prev.classList.remove("button1")};
+       if(old==(nspan-1)) {next.classList.remove("button1")};
+       if(current==0) {prev.classList.add("button1")};
+       if(current==(nspan-1)) {next.classList.add("button1")};
+    }
+    
+    /*
       
     for(let i=0;i<nspan;i++){
         footer_button[i].style.background= "#000";
@@ -84,7 +83,7 @@ function Color(old,current){
         if (i==bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
         footer_button[i].style.opacity="1";}
     }
-}
+} */
  
 //Dịch chuyển khi click và màu nút thay đổi
     next.addEventListener("click",toNext);
@@ -104,6 +103,12 @@ function Color(old,current){
             footer_button[(i-1)].classList.remove("icon1");
             }
         };
+        if(bt==nspan-1){
+            next.classList.add("button1");
+        }
+        if(bt==1){
+            prev.classList.remove("button1")
+        }
     };
     function toPrev(){
         if (sta>0 && sta>(a*wili)){
@@ -120,6 +125,12 @@ function Color(old,current){
             footer_button[(i+1)].classList.remove("icon1");
             }
         };
+        if(bt==nspan-2){
+            next.classList.remove("button1");
+        }
+        if(bt==0){
+            prev.classList.add("button1");
+        }
     };
 // Dịch chuyển khi di chuột 
     next.addEventListener("mouseover",nOver);
@@ -149,5 +160,6 @@ function Color(old,current){
     
 
 }
+       
 var gallery1 = new gallery("gallery",{wi:700, nli:5,pos:50,wili:280, a:2});
  
