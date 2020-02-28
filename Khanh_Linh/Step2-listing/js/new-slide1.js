@@ -52,7 +52,7 @@ function Color(){
     for(let i=0;i<nspan;i++){
         footer_button[i].style.background= "#000";
         footer_button[i].style.opacity="0.2";
-        if (i=bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
+        if (i==bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
         footer_button[i].style.opacity="1";}
     }
 }
