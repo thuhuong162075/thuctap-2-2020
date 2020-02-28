@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'SFD-Bold';
+    font-display:auto;src: url('../font/SFD-Heavy/SFD-Bold.eot');
+    src: url('../font/SFD-Heavy/SFD-Bold.eot') format('embedded-opentype'),url('../font/SFD-Heavy/SFD-Bold.woff2'),url('../font/SFD-Heavy/SFD-Bold.woff') format('woff'),url('../font/SFD-Heavy/SFD-Bold.ttf') format('truetype'),url('../font/SFD-Heavy/SFD-Bold.svg#SFD-Bold') format('svg');
+}
+$font1: 'SFD-Bold';
+$bg-button1: rgba(224, 43, 43, 0.9);
+$bg-button2: rgba(90,90,90,0.9);
+$url-button: url(../img/sprite-k14.20.png);
+* {
+	margin: 0;
+	padding: 0;
+}
+.emagazine {
+	&-wrapper {
+		width: 700px;
+		margin: 30px auto;
+		background: #222;
+		border-top: 5px solid #fb6c27;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		position: relative;
+	}
+	&__title {
+		margin: 20px;
+		img {
+			width: 165px;
+			height: 38px;
+		}
+	}
+	&__content {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		height: 310px;
+		.list-group {
+			position: absolute;
+			display: flex;
+			list-style-type: none;
+			padding-bottom: 20px;
+			transition-duration: 1s;
+  			transition-timing-function: ease-out;
+  			transition-delay: 0.05s;
+  			left: 0;
+			.list-item {
+				margin-left: 20px;
+				background: #fff;
+				width: 260px;
+				border-radius: 5px;
+				display: block;
+				img {
+					width: 260px;
+					border-top-right-radius: 5px;
+					border-top-left-radius: 5px;
+				}
+				h4 {
+					margin: 12px 12px 20px;
+					font-size: 17px;
+					line-height: 22px;
+					color: #333;
+					font-family: $font1;
+				}
+			}
+		}
+		.button {
+			position: absolute;
+			width: 35px;
+			height: 95px;
+			z-index: 2;
+			top: 110px;
+			&-prev {
+				background: $url-button -70px -137px no-repeat;
+				left: 0px;
+				background-color: $bg-button1;
+			}
+			&-next {
+				background: $url-button -115px -137px no-repeat;
+				right: 0px;
+				background-color: $bg-button1;
+			}
+		}
+	}
+	.pagination {
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		.pg-bullet {
+			cursor: pointer;
+			margin: 0 8px;
+			border-radius: 100%;
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			background: $bg-button2;
+		}
+	}
+
+}

@@ -1,17 +1,19 @@
 var gallery=function (id,option){
-	var idparentbullets = option.idparentbullets || id;
-	var idparentbullets=document.getElementById(idparentbullets);
-	var idele=document.getElementById(id);
+	var idParentBullets = option.idParentBullets || id;
+	var idParentBullets=document.getElementById(idParentBullets);
 	var hover = option.hover || 20;
 	var wli = option.wli;
 	var nli = option.nli;
 	var wd = option.wd;
-	var ul=idele.querySelector(".jsListGroup");
+	var pos = option.pos || 280;
 	var click = 0;
-	var pos = option.pos || -280;
 	var bg1 = 'rgba(90,90,90,0.9)';
 	var bg2 = 'rgba(224, 43, 43, 0.9)';
 	var pot = click*pos;
+
+	var idele=document.getElementById(id);
+	var ul=idele.querySelector(".jsListGroup");
+
 	var next=idele.querySelector(".next");
 	var prev=idele.querySelector(".prev");
 
@@ -23,45 +25,53 @@ var gallery=function (id,option){
 	prev.addEventListener("mouseover",mOver);
 	prev.addEventListener("mouseout",mOut);
 
-	prev.style.pointerEvents = 'none';
-	prev.style.backgroundColor = bg1;
 	
-
+	//create tag span bullets
 	for(let j=0; j <= Math.ceil((wli*nli-wd)/pos); j++){
 		var span = document.createElement("span");
 		span.classList.add("pg-bullet");
-		var pagi = idparentbullets.querySelector('div.pagination');
+		var pagi = idParentBullets.querySelector('div.pagination');
 		pagi.appendChild(span);
 	}
+	var bullets=idParentBullets.querySelectorAll("span.pg-bullet");
 
-	var bullets=idparentbullets.querySelectorAll("span.pg-bullet");
+	//setup status begin
+	prev.style.pointerEvents = 'none';
+	prev.style.backgroundColor = bg1;
 	bullets[0].style.background = "#e02b2b";
 
+	//function when click span bullets
 	for (let [index, bullet] of bullets.entries()){
 		bullet.addEventListener('click', function(){
 			click=index;
-			ul.style.left = String(-click*pos) + 'px';
+			changeleft();
 			bgBullet();
 			check();
 		});
 	}
+	//function click next
 	function nextPos(){
 		click++;	
+		changeleft();
+		check();
+		bgBullet();
+	}
+	//function click prev
+	function prevPos(){
+		click--;
+		changeleft();
+		check();
+		bgBullet();
+	}
+	//function list left change 
+	function changeleft(){
 		if(click*pos-(wli*nli-wd) > 0 ){
 			ul.style.left = String(wd-wli*nli) + 'px';
 		}else{
 			ul.style.left = String(-click*pos) + 'px';
 		}
-		check();
-		bgBullet();
-
 	}
-	function prevPos(){
-		click--;
-		ul.style.left = String(-click*pos) + 'px';
-		check();
-		bgBullet();
-	}
+	//function check condition status begin/end
 	function check(){
 		if(click==Math.ceil((wli*nli-wd)/pos)){
 			next.style.pointerEvents = 'none';
@@ -79,6 +89,7 @@ var gallery=function (id,option){
 			prev.style.backgroundColor = bg2;
 		}
 	}
+	//function change background bullet
 	function bgBullet(){
 		for(var i=0; i<bullets.length; i++){
 			bullets[i].style.background = '#c4c4c4';
@@ -87,10 +98,12 @@ var gallery=function (id,option){
 			}
 		}
 	}
+	//function mouseover button 
 	function mOver(){
 		pot+=hover;		
 		ul.style.transform = 'translate3d(-'+(pot)+'px, 0px, 0px)';
 	}
+	//function mouseout button
 	function mOut(){
 		pot-=hover;
 		ul.style.transform = 'translate3d(-'+(pot)+'px, 0px, 0px)';
@@ -103,7 +116,7 @@ var gallery1 = new gallery("gallery",
 		 	nli: 5,
 		 	wd: 700,
 		 	pos: 200,
-		  	idparentbullets: "photostory",
+		  	idParentBullets: "photostory",
 		  	hover: "20",
 		  });
 var gallery2 = new gallery("gallery1",
@@ -112,6 +125,6 @@ var gallery2 = new gallery("gallery1",
 		 	nli: 5,
 		 	wd: 700,
 		 	pos: 300,
-		  	idparentbullets: "photostory1",
+		  	idParentBullets: "photostory1",
 		  	hover: "20",
 		  });

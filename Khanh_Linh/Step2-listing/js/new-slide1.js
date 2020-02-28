@@ -14,16 +14,37 @@ var gallery= function(idele,option) //idele là id, option chứa những giá t
 var nspan= Math.ceil(nli/a); 
 for(let i=0;i<nspan; i++){ 
     var footer_span = document.createElement("span");
+    footer_span.setAttribute("data-index",i);
     footer_span.classList.add("icon");
     console.log(id.querySelector(".content-footer"))
     id.querySelector(".content-footer").appendChild(footer_span);
 };
 //màu nút đầu tiên
 var footer_button = id.querySelectorAll(".icon");
-footer_button[0].classList.add("icon1");
+footer_button[0].style.background= "rgba(251,108,39,1)";
+footer_button[0].style.opacity="1";
 //Dịch chuyển khi click nút
 console.log(footer_button);
-footer_button.forEach(function(button,index){
+id.querySelector(".content-footer").addEventListener("click",function(e){
+      let old=bt;
+      let index=parseInt(e.target.getAttribute("data-index"));
+      console.log(index,index!=NaN);
+      if(typeof(index)=='number' && index>=0){
+        console.log(old,index,'ab',e.target.getAttribute("data-index"));
+      
+      console.log(e)
+      //return false;
+        bt=index;
+        if (bt<2){
+            sta=a*wili*bt
+        } else{ sta=(nli*wili -wi) }
+        idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)';
+       // Color();
+       Color(old,index);
+      }
+      
+    });
+/*footer_button.forEach(function(button,index){
   console.log(button,index);
   id.querySelector(".content-footer").addEventListener("click",function(e){
       console.log(e,this,this.currentTarget)
@@ -36,6 +57,7 @@ footer_button.forEach(function(button,index){
         Color();
     });
 });
+*/
 /*
 for (let [index, button] of footer_button){   
         button.addEventListener("click",function(){
@@ -48,11 +70,18 @@ for (let [index, button] of footer_button){
             Color();
         });  
 };*/
-function Color(){
+function Color(old,current){
+    /*console.log(old,current,footer_button);
+       footer_button[old].style.background= "#000";
+       footer_button[old].style.opacity="0.2";
+       footer_button[current].style.background= "rgba(251,108,39,1)";
+       footer_button[current].style.opacity="1";
+    */
+      
     for(let i=0;i<nspan;i++){
         footer_button[i].style.background= "#000";
         footer_button[i].style.opacity="0.2";
-        if (i=bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
+        if (i==bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
         footer_button[i].style.opacity="1";}
     }
 }
