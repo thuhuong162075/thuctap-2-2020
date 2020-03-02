@@ -12,6 +12,12 @@ var gallery = function(idele,option){
     var next= id.querySelector(".button-next");
     var prev= id.querySelector(".button-prev");
     prev.classList.add("button1");
+    doc.addEventListener("mouseover",function(){
+        prev.classList.add("dp-button");
+    });
+    doc.addEventListener("mouseout",function(){
+        prev.classList.remove("dp-button");
+    });
     //Hàm tạo các nút
     var sbt = Math.ceil(sli/a);
     for(let i=0; i<sbt; i++){

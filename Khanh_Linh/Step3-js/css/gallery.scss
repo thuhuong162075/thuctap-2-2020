@@ -114,6 +114,7 @@ $black: #222;
         height: 95px;
         z-index: 10;
         cursor: pointer;
+        left: -35px;
     }
     &-button{
         position: absolute;
@@ -139,3 +140,6 @@ $black: #222;
     background-color:black!important;
       opacity : 0.6;
     }
+.dp-button{
+    left: 0!important;
+}

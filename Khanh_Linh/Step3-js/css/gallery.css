@@ -90,7 +90,8 @@
     width: 35px;
     height: 95px;
     z-index: 10;
-    cursor: pointer; }
+    cursor: pointer;
+    left: -35px; }
     .page-gallery .button-prev:hover {
       background-color: #fb6c27; }
   .page-gallery-button {
@@ -115,5 +116,8 @@
 .button1 {
   background-color: black !important;
   opacity: 0.6; }
+
+.dp-button {
+  left: 0 !important; }
 
 /*# sourceMappingURL=gallery.css.map */
