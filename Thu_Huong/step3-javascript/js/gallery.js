@@ -9,7 +9,7 @@ window.gallery = function(id,option){
 	var bg2 = 'rgba(224, 43, 43, 0.9)';
 	var click = 0;
 	var pot = click*pos;
-
+	var bt=0 //quy định trạng thái nút 
 	idParentBullets = document.getElementById(idParentBullets);
 	idele = document.getElementById(id);
 	var ul = idele.querySelector(".jsListGroup");
@@ -20,10 +20,12 @@ window.gallery = function(id,option){
 	//create tag span 
 	for(let i=0; i<=Math.ceil((wli*nli-wd)/pos); i++){
 		var span = document.createElement("SPAN");
+		span.setAttribute("data-index",i);
 		span.classList.add("pg-bullet");
 		pagi = idParentBullets.querySelector(".pagination");
 		pagi.appendChild(span);
 	}
+
 	var bullets = idParentBullets.querySelectorAll(".pg-bullet");
 	//setup status begin 
 	prev.style.pointerEvents = 'none';
@@ -49,6 +51,7 @@ window.gallery = function(id,option){
 			check();
 		})
 	}
+	
 
 	//function click next
 	function nextPos(){
