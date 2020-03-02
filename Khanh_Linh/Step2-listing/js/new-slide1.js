@@ -1,4 +1,4 @@
-var gallery= function(idele,option) //idele là id, option chứa những giá trị thay đổi nhằm tái sử dụng
+var slide= function(idele,option) //idele là id, option chứa những giá trị thay đổi nhằm tái sử dụng
 {   var bt=0; //quy định trạng thái nút
     var a=option.a || 2 ; // a là số li dịch trong 1 lần click
     var nli=option.nli;
@@ -18,18 +18,17 @@ for(let i=0;i<nspan; i++){
     var footer_span = document.createElement("span");
     footer_span.setAttribute("data-index",i);
     footer_span.classList.add("icon");
-    console.log(id.querySelector(".content-footer"))
     id.querySelector(".content-footer").appendChild(footer_span);
 };
 //màu nút đầu tiên
 var footer_button = id.querySelectorAll(".icon");
 footer_button[0].classList.add("icon1");
 //Dịch chuyển khi click nút
-console.log(footer_button);
 id.querySelector(".content-footer").addEventListener("click",function(e){
       let old=bt;
-      let index=parseInt(e.target.getAttribute("data-index"));
-      if(typeof(index)=='number' && index>=0){
+      let index=parseInt(e.target.getAttribute("data-index")); // index= 0, 1,2,3... tùy vào nút click
+      if(typeof(index)=='number' && index>=0)// kiểm tra giá trị index nó Nan không, khi click vào vùng trống của cha
+      {
         bt=index;
         if (bt<(footer_button.length-1)){
             sta=a*wili*bt
@@ -40,32 +39,7 @@ id.querySelector(".content-footer").addEventListener("click",function(e){
       }
       
     });
-/*footer_button.forEach(function(button,index){
-  console.log(button,index);
-  id.querySelector(".content-footer").addEventListener("click",function(e){
-      console.log(e,this,this.currentTarget)
-        console.log(button,index);
-        console.log(bt);
-        bt=index;
-        if (bt<footer_button.length){
-            sta=a*wili*bt
-        } else{ sta=nli*wili }
-        Color();
-    });
-});
-*/
-/*
-for (let [index, button] of footer_button){   
-        button.addEventListener("click",function(){
-            console.log(index);
-            console.log(bt);
-            bt=index;
-            if (bt<footer_button.length){
-                sta=a*wili*bt
-            } else{ sta=nli*wili }
-            Color();
-        });  
-};*/
+    //Hàm thay đổi màu nút, xóa nút cũ thêm màu nút mới
 function Color(old,current){
        footer_button[current].classList.add("icon1");
        footer_button[old].classList.remove("icon1");
@@ -74,16 +48,7 @@ function Color(old,current){
        if(current==0) {prev.classList.add("button1")};
        if(current==(nspan-1)) {next.classList.add("button1")};
     }
-    
-    /*
-      
-    for(let i=0;i<nspan;i++){
-        footer_button[i].style.background= "#000";
-        footer_button[i].style.opacity="0.2";
-        if (i==bt) { footer_button[i].style.background= "rgba(251,108,39,1)";
-        footer_button[i].style.opacity="1";}
-    }
-} */
+
  
 //Dịch chuyển khi click và màu nút thay đổi
     next.addEventListener("click",toNext);
@@ -157,9 +122,7 @@ function Color(old,current){
         sta+=pos;
         idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)'; }
     };
-    
-
 }
        
-var gallery1 = new gallery("gallery",{wi:700, nli:5,pos:50,wili:280, a:2});
+var gallery1 = new slide("gallery",{wi:700, nli:5,pos:50,wili:280, a:2});
  
