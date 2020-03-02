@@ -1,37 +1,36 @@
-var gallery = function(idele,option){
-    var a= option.a || 2; 
-    var wd= option.wd || 700;
-    var sli= option.sli || 5; // tổng số li
-    var wdli = option.wdli || 280 //wd của  1 li
-    var bt =0; // trạng thái nút
-    var pos= option.pos || 50;
+var step10 = function(idele,option){
+    var bt=0;
     var sta=0;
-    var doc= document.getElementById(option.gallery_1)
+    var wd = option.wd || 700;
+    var sli= option.sli ||5;
+    var pos= option.pos ||50;
+    var wdli=option.wdli || 280;
+    var a =option.a || 2;
+    var doc= document.getElementById(option.gallery);
     var id= document.getElementById(idele);
-    var idlist = id.querySelector(".page-gallery-content-list");
-    var next= id.querySelector(".button-next");
-    var prev= id.querySelector(".button-prev");
+    var idlist= id.querySelector(".page-step10-content-list");
+    var next = id.querySelector(".button-next");
+    var prev = id.querySelector(".button-prev");
     prev.classList.add("button1");
     doc.addEventListener("mouseover",function(){
+        sta+=1;
         prev.classList.add("dp-button");
     });
     doc.addEventListener("mouseout",function(){
         prev.classList.remove("dp-button");
     });
-    //Hàm tạo các nút
     var sbt = Math.ceil(sli/a);
     for(let i=0; i<sbt; i++){
         var cbt = document.createElement("span");
         cbt.setAttribute("data-index",i); //set Att dataindex=i
         cbt.classList.add("icon");
-        doc.querySelector(".page-gallery-button").appendChild(cbt);
+        doc.querySelector(".page-step10-button").appendChild(cbt);
         
     };
-    //Tạo màu cho nút đàu tiên
     var button = doc.querySelectorAll(".icon");
     button[0].classList.add("icon1");
-    // Dịch chuyển khi click nút
-    doc.querySelector(".page-gallery-button").addEventListener("click", function(e){
+    
+    doc.querySelector(".page-step10-button").addEventListener("click", function(e){
         let old=bt; // lưu lại trạng thái hiện tại
         let index=parseInt(e.target.getAttribute("data-index"));
         if(typeof(index)=='number'&& index>=0){
@@ -43,7 +42,6 @@ var gallery = function(idele,option){
             Color(old,index);
         }
     });
-    //Màu cho các nút khi click
     function Color(old,current){
         button[old].classList.remove("icon1");
         button[current].classList.add("icon1");
@@ -52,7 +50,6 @@ var gallery = function(idele,option){
         if(current==0){prev.classList.add("button1")};
         if(current==(sbt-1)){next.classList.add("button1")};
     };
-    //Hàm dịch chuyển khi trỏ
     next.addEventListener("mouseover",nOver);
     next.addEventListener("mouseout",nOut);
     prev.addEventListener("mouseover",pOver);
@@ -64,12 +61,13 @@ var gallery = function(idele,option){
         }
     }
     function nOut(){
-        if(sta<(sli*wdli-wd+30)){
+        if(sta<(sli*wdli-wd+pos)){
             sta-=pos;
             idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)'; 
         }
     }
     function pOver(){
+        console.log(sta);
         if( sta>0){
             sta-=pos;
             idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)'; 
@@ -81,7 +79,6 @@ var gallery = function(idele,option){
             idlist.style.transform='translate3d(-'+(sta)+'px, 0px, 0px)'; 
         }
     }
-    //Hàm chuyển khi click
     next.addEventListener("click",toNext);
     prev.addEventListener("click",toPrev);
     function toNext(){
@@ -134,4 +131,4 @@ var gallery = function(idele,option){
         }
     }
 }
-var gallery1 = new gallery("gallery-content",{wd:700, sli:5,pos:50,wdli:280, a:2, gallery_1: "gallery"});
+var gallery1 = new step10("step10-content",{wd:700, sli:8,pos:50,wdli:280, a:2, gallery: "step10"});
